@@ -1,5 +1,5 @@
 # Process Journal 
 
 1. [Process](./Process.md)
-2. Technical Documentation 
+2. [Technical Documentation](./docs/README.md) 
 

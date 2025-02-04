@@ -49,7 +49,7 @@ const App = () => {
           </div>
         </div>
         <div className="mt-7 text-xs font-light text-center text-white max-md:max-w-full">
-          Licensed under the MIT License by M. Shahrom Ali. November 2024 
+          Copyrights © Muhammad Shahrom Ali January 2025. All Rights Reserved  
         </div>
       </div>
     </div>
