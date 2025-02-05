@@ -1,4 +1,14 @@
 
+# February 5th 2025 
+
+## 12:00AM 
+Fixed the problems with MD on github. Dont know why though, its kinda irrelevant to my purpose... lol  
+Anyway. Whats next?
+
+I'll stop here and move to writing and let this stir in my mind. I need a throughline of execution - like the thread for tanjiro. 
+Stopped 12:32AM 
+
+
 # February 4th 2025 
 
 ## 9:45 PM 
