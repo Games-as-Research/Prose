@@ -66,11 +66,13 @@ A history of commits over time can give an understanding of the overall design s
 
 The methods used to inform the analysis draw on qualitative research approaches. We propose case study as a format, which is appropriate to use when there is no predetermined hypothesis, when the intention is to gather rich, detailed data in an authentic setting, and when a holistic understanding of the phenomena is sought, in keeping with the idea that much of what we can know about human behaviour is best understood as lived experience in the social context [66]. Other possible formats include grounded theory [61] and digital ethnography [15]. Whichever format is used, the researcher should seek to focus on design taking place in context, and propositions must be based on evidence present in the repository.
 
-![[./assets/Figure1.png|Figure 1: An example of Git commits from It is as if you were doing work]]
+<img src="./assets/Figure1.png" alt="Figure 1: An example of Git commits from It is as if you were doing work" />
+
 **Figure 1: An example of Git commits from *It is as if you were doing work***
 
 
-![[./assets/Figure2.png|Figure 2: An example of process entries from It is as if you were doing work]]
+<img src="./assets/Figure2.png" alt="Figure 2: An example of process entries from It is as if you were doing work" />
+
 **Figure 2: An example of process entries from *It is as if you were doing work***
 
 In the following section, we present an example of a cold case analysis of the game *It is as if you were doing work* [4] (or *Work* for short). *Work* is a free, browser-based game developed by Pippin Barr, an author of this paper, and is accompanied by a publicly available GitHub repository featuring code (see figure 1), process documentation (see figure 2), and press materials, and is also the subject of numerous design diary entries Barr maintained throughout Work’s development process [7]. An often overlooked truth of design research is that the motivation to extract design knowledge from the work of other designers often hinges on its perceived qualities, good or otherwise. *Work* has been played by approximately 200,000 players at the time of writing, and has received many positive reviews in well-known online publications, including *Vice* [64], *The Verge* [63], *Engadget* [56], *Boing Boing* [11], and *Tech Crunch* [12]. Based on its positive reception, coupled with the rigorous documentation Barr engaged in throughout the process of making *Work*, we use it as a candidate to demonstrate how game design analysis can be undertaken based on builds, code, and documentation.
@@ -78,7 +80,8 @@ In the following section, we present an example of a cold case analysis of the g
 The analysis itself was written by another author of this paper, not Barr himself. While the analyst had no specific question in mind on beginning the analysis, his intent was to identify key moments in the design trajectory that can yield game design-relevant insights. Additionally, the analyst had little knowledge of the end result of Barr’s design prior to undertaking the analysis as he had not played the game at that time. His approach was to follow Barr’s design process, continuously comparing Barr’s writing with contemporaneous prototype builds extracted from the GitHub repository.
 ## A Design Process Analysis Of "It Is As If You Were Doing Work"
 
-![[./assets/Figure3.png|Figure 3: It is as if you were doing work during play]]
+<img src="./assets/Figure3.png" alt="Figure 3: It is as ify you were doing work during play" />
+
 **Figure 3: *It is as if you were doing work* during play**
 
 ### A "UI game"
@@ -93,17 +96,21 @@ In his “basic idea” statement, Barr judges it useful to embody his design in
 Barr’s first diary entry thus already gives a glimpse of typical game design reasoning and operations. Ideas are harvested from observation. Just like the master painter’s eye is trained to spot the interesting lighting conditions or the facial expression of a model that will lead to a complete painting, the game designer notices activities or situations that can be modelled meaningfully in a ludic structure. Hybridization is another common game design operation, relieving both designers and players of the burden of re-thinking (and re-learning) a completely new game structure by working from familiar patterns: *what if we took X but replaced Y with Z*? This requires game literacy: a large repertoire of ludic structures and components to draw from, juggle with, and reorganize. Finally, a game designer needs the capacity to imagine a game not yet made in action, so as to anchor abstract ideas in material form.
 ### The problem of language
 
-![[./assets/Figure4.png]]
+<img src="./assets/Figure4.png" alt="Figure 4: Early screenshot of It is as if you were doing work with placeholder text" />
+
 **Figure 4: Early screenshot of It is as if you were doing work with placeholder text [9]**
+
 
 In his March 27th diary entry, as Barr is picking up speed in the development of this game, he brings up what he calls “*the question of language*” [3]. Now that he has an actual GUI window to work with (see figure 4), he simply acknowledges that these usually contain text, which begs the very material question of: what text? Barr seems to want to avoid this question (probably to keep the focus on the “UI game” and not so much on whatever content might create the context of these operations) by imagining non-text alternatives such as “*emoji or ‘censored’ unicode block elements*”. This leads him to thinking in terms of an alien language that could be rendered as strings of varying non-letter characters such as in figure 5.
 
-![[./assets/Figure5.png]]
+<img src="./assets/Figure5.png" alt="Figure 5: An example of the “alien writing” version of It is as if you were doing work from commit `51b5f5d883f146b8d232f706e4cac802b33a6783`, March 21st 2017" />
+
 **Figure 5: An example of the “alien writing” version of It is as if you were doing work from commit `51b5f5d883f146b8d232f706e4cac802b33a6783`, March 21st 2017 [8]**
 
 The following entries show how the seemingly decorative question of how to dress up the core mechanics of the game begins to steer the project in new directions. Barr is concerned that the alien language might beg to be deciphered, that players will bite on this mystery, perhaps overlooking the GUI play. He juggles with ideas to discourage such an interpretation: *“perhaps animating the characters?”* He considers dropping it in favour of generic labels such as “Radio 1” and “Radio 2” and “Button” but regrets that it would end up “*missing out on the cool language thing*”. We see that in the process of solving the design problems raised by his initial question, Barr has stumbled upon a formal idea that is now exerting its own pull. The default visual settings of the JQuery library Barr is using is yet another factor of influence. The Unicode blocky characters look even more alien in white on dark grey than they would in more desktop-like styles.
 
-![[./assets/Figure6.png]]
+<img src="./assets/Figure6.png" alt="Figure 6: Partial capture of array of pre-written content phrases in *It is as if you were doing work*" />
+
 **Figure 6: Partial capture of array of pre-written content phrases in *It is as if you were doing work* [6].**
 
 We can easily imagine a very different Work game building up from here that would still be hinging on the mechanics of familiar GUI elements, but as a foundation to support a decrypting/discovery gameplay: *What do these buttons mean? What is this an interface to? How can I work it to do something?* On March 31st, Barr backtracks completely from the alien language idea and opts for a more traditional early Windows aesthetic [5]. His reasoning is that it was “*detracting from being able to think of it in a humorous way*” and “*pulling away from the original idea of a person pretending to work*” [3]. His new answer to the “content” problem is to resort to “*business-y wording and phrases generated through Tracery*” (eventually, the list of prewritten phrases visible in figure 6).
@@ -116,7 +123,8 @@ Eight months later, as the core elements of the game are now functional, Barr co
 	‘the player’ is a person who lives in the near future of fully automated work and a living wage. They have no obligations day to day, but they remember the concept of working and the idea that having a job and doing work (on a computer) gave them value in society. They want to continue to have that feeling, but there’s nothing for them to actually do, so this game “It is as if you were doing work” exists to allow them to have that feeling - the semblance of doing work without the actual productivity. [3]
 
 
-![[./assets/Figure7.png]]
+<img src="./assets/Figure7.png" alt="Figure 7: “About” screen from final build for *It is as if you were doing work" />
+
 **Figure 7: “About” screen from final build for *It is as if you were doing work***
 
 There is no discussion as to how this setting came about, with the exception of a need to establish a framing context for the player’s activities in the game: playing at working. Part of the elegance of this solution is its economy: it requires no additional design work. Everything remains as it was, except there is now a need to convey the piece’s fictive backdrop. Eventually, this will be reduced to a diegetically grounded “About” document left on the desktop to be read by the player, shown in figure 7.
@@ -152,71 +160,137 @@ The design of games is the solving of imagined problems. Unlike productivity app
 
 ## Bibliography 
 [1] 2017. GDC Vault. (2017). https://www.gdcvault.com/ 
+
 [2] Espen Aarseth. 2001. Computer Game Studies, Year One. http://gamestudies.org/0101/editorial.html. Game Studies 1, 1 (July 2001). 
+
 [3] Pippin Barr. 2016-2017. ‘It is As If You Were Doing Work’ Process Diary. (2016-2017). https://github.com/pippinbarr/itisasifyouweredoingwork/tree/master/process/README.md
+
 [4] Pippin Barr. 2017. It is As If You Were Doing Work. (2017). https://pippinbarr.github.io/itisasifyouweredoingwork/ 
+
 [5] Pippin Barr. 2017. ‘It is As If You Were Doing Work’ commit c0a887d890ffd2a0b2b2dbc34aa1a214f9d3b3e4. (2017). https://github.com/pippinbarr/itisasifyouweredoingwork/commit/ c0a887d890ffd2a0b2b2dbc34aa1a214f9d3b3e4 
+
 [6] Pippin Barr. 2017. ‘It is as if you were doing work’ data.js file. (2017). https: //github.com/pippinbarr/itisasifyouweredoingwork/blob/master/js/data.js 
+
 [7] Pippin Barr. 2017. ‘It is As If You Were Doing Work’ GitHub Repository. (2017). https://github.com/pippinbarr/itisasifyouweredoingwork 
+
 [8] Pippin Barr. 2017. ‘It is as if you were doing work’ screenshot of UI with alien text. (2017). https://github.com/pippinbarr/itisasifyouweredoingwork/commit/ 51b5f5d883f146b8d232f706e4cac802b33a6783 
+
 [9] Pippin Barr. 2017. ‘It is as if you were doing work’ screenshot of UI with placeholder text. (2017). https://github.com/pippinbarr/itisasifyouweredoingwork/blob/ master/process/images/Screen%20Shot%202017- 01- 05%20at%2012.03.57.png 
+
 [10] Pippin Barr. 2017. Press Kit for ‘It Is As If You Were Doing Work’. (2017). https://github.com/pippinbarr/itisasifyouweredoingwork/tree/master/ press/README.md 
+
 [11] Rob Beschizza. 2017. It Is As If You Were Doing Work is a browser game celebrating Windows 3-era cubicle drudgery. (2017). https://boingboing.net/2017/07/04/it-is-as-if-you-were-doing-wor.html 
+
 [12] John Biggs. 2017. New game simulates the old grind. (2017). https://techcrunch.com/2017/07/06/new-game-simulates-the-old-grind/ 
+
 [13] Mark Blythe, Kees Overbeeke, Andrew Monk, and Peter Wright. 2003. Funology: From Usability to Enjoyment. Springer Netherlands.  
+
 [14] Mark Blythe, Jamie Steane, Jenny Roe, and Caroline Oliver. 2015. Solutionism, the Game: Design Fictions for Positive Aging. In Proceedings of the 33rd Annual ACM Conference on Human Factors in Computing Systems (CHI ’15). ACM, New York, NY, USA, 3849–3858. https://doi.org/10.1145/2702123.2702491 
+
 [15] Tom Boellstorff, Bonnie Nardi, Celia Pearce, and T. L. Taylor. 2012. Ethnography and Virtual Worlds: A Handbook of Method. Princeton University Press.  
+
 [16] Julia Ayumi Bopp, Elisa D. Mekler, and Klaus Opwis. 2016. Negative Emotion, Positive Experience?: Emotionally Moving Moments in Digital Games. In Proceedings of the 2016 CHI Conference on Human Factors in Computing Systems (CHI ’16). ACM, New York, NY, USA, 2996–3006. https://doi.org/10.1145/2858036.2858227 
+
 [17] John Bowers. 2012. The Logic of Annotated Portfolios: Communicating the Value of ’Research Through Design’. In Proceedings of the Designing Interactive Systems Conference (DIS ’12). ACM, New York, NY, USA, 68–77. https://doi.org/10.1145/2317956.2317968 
+
 [18] Richard Buchanan. 1985. Declaration by Design: Rhetoric, Argument, and Demonstration in Design Practice. Design Issues 2, 1 (1985), 4–22. https://doi.org/10.2307/1511524 
+
 [19] Marion Buchenau and Jane Fulton Suri. 2000. Experience Prototyping. In Proceedings of the 3rd Conference on Designing Interactive Systems: Processes, Practices, Methods, and Techniques (DIS ’00). ACM, New York, NY, USA, 424433. https://doi.org/10.1145/347642.347802 
+
 [20] John M. Carroll and John M. Thomas. 1988. FUN. SIGCHI Bull. 19 (January 1988), 21–24. Issue 3. https://doi.org/10.1145/49108.1045604 
+
 [21] Dennis Chao. 2001. Doom As an Interface for Process Management. In Proceedings of the SIGCHI Conference on Human Factors in Computing Systems (CHI ’01). ACM, New York, NY, USA, 152–157. https://doi.org/10.1145/365024.365078 
+
 [22] Lucas Colusso, Gary Hsieh, and Sean A. Munson. 2016. Designing Closeness to Increase Gamers’ Performance. In Proceedings of the 2016 CHI Conference on Human Factors in Computing Systems (CHI ’16). ACM, New York, NY, USA, 3020–3024. https://doi.org/10.1145/2858036.2858206 
+
 [23] Patricia Ivette Cornelio Martinez, Silvana De Pirro, Chi Thanh Vi, and Sriram Subramanian. 2017. Agency in Mid-air Interfaces. In Proceedings of the 2017 CHI Conference on Human Factors in Computing Systems (CHI ’17). ACM, New York, NY, USA, 2426–2439. https://doi.org/10.1145/3025453.3025457  
+
 [24] Nigel Cross. 2011. Design Thinking: Understanding How Designers Think and Work. Bloomsbury Publishing. 
+
 [25] Peter Dalsgaard. 2010. Research in and Through Design: An Interaction Design Research Approach. In Proceedings of the 22Nd Conference of the ComputerHuman Interaction Special Interest Group of Australia on Computer-Human Interaction (OZCHI ’10). ACM, New York, NY, USA, 200–203. https://doi.org/10.1145/1952222.1952265 
+
 [26] Peter Dalsgaard and Kim Halskov. 2012. Reflective Design Documentation. In Proceedings of the Designing Interactive Systems Conference (DIS ’12). ACM, New York, NY, USA, 428–437. https://doi.org/10.1145/2317956.2318020 
+
 [27] Heather Desurvire, Martin Caplan, and Jozsef A. Toth. 2004. Using Heuristics to Evaluate the Playability of Games. In CHI ’04 Extended Abstracts on Human Factors in Computing Systems (CHI EA ’04). ACM, New York, NY, USA, 15091512. https://doi.org/10.1145/985921.986102
+
 [28] Sebastian Deterding. 2017. The Pyrrhic Victory of Game Studies. Games and Culture 12, 6 (2017), 521–543. https://doi.org/10.1177/1555412016665067 
+
 [29] Steven P. Dow, Kate Heddleston, and Scott R. Klemmer. 2009. The Efficacy of Prototyping Under Time Constraints. In Proceedings of the Seventh ACM Conference on Creativity and Cognition (C&#38;C ’09). ACM, New York, NY, USA, 165–174. https://doi.org/10.1145/1640233.1640260 
+
 [30] Markku Eskelinen. 2001. The Gaming Situation. http://www.gamestudies.org/0101/eskelinen/. Game Studies 1, 1 (July 2001). 
+
 [31] Daniel Fallman. 2007. Why Research-Oriented Design Isn’t Design-Oriented Research: On the Tensions Between Design and Research in an Implicit Design Discipline. Knowledge, Technology & Policy 20, 3 (01 Oct 2007), 193–200. https://doi.org/10.1007/s12130-007-9022-8 
+
 [32] Mary Flanagan and Helen Nissenbaum. 2014. Values at Play in Digital Games. The MIT Press. 
+
 [33] Christopher Frayling. 1993. Research in Art and Design. Royal College of Art. 
+
 [34] Tracy Fullerton. 2008. Game Design Workshop, Second Edition: A Playcentric Approach to Creating Innovative Games (Gama Network Series) (2 ed.). Morgan Kaufmann. 
+
 [35] Wei Gai, Chenglei Yang, Yulong Bian, Chia Shen, Xiangxu Meng, Lu Wang, Juan Liu, Mingda Dong, Chengjie Niu, and Cheng Lin. 2017. Supporting Easy Physicalto-Virtual Creation of Mobile VR Maze Games: A New Genre. In Proceedings of the 2017 CHI Conference on Human Factors in Computing Systems (CHI ’17). ACM, New York, NY, USA, 5016–5028. https://doi.org/10.1145/3025453.3025494 
+
 [36] Bill Gaver. 2002. Designing for Homo Ludens. i3 Magazine (June 2002), 2–5. 
+
 [37] William Gaver. 2011. Making Spaces: How Design Workbooks Work. In Proceedings of the SIGCHI Conference on Human Factors in Computing Systems (CHI ’11). ACM, New York, NY, USA, 1551–1560. https://doi.org/10.1145/1978942.1979169 
+
 [38] Danny Godin and Mithra Zahedi. 2014. Aspects of Research through Design. In Proceedings of the Design, Research, Society Conference 2014. Umea, Sweden. 
+
 [39] Steve Harrison, Deborah Tatar, and Phoebe Sengers. 2007. The Three Paradigms of HCI. In alt.chi 2007.  
+
 [40] Henriette C M Hoonhout. 2008. Let the Game Tester Do the Talking: Think Aloud and Interviewing to Learn About the Game Experience. In Game Usability: Advancing the Player Experience, Katherine Isbister and Noah Schaffer (Eds.). Morgan Kaufmann, Chapter 4, 65 – 77. 
+
 [41] Robin Hunicke, Marc Leblanc, and Robert Zubek. 2004. MDA: A Formal Approach to Game Design and Game Research. In Proceedings of the Challenges in Game AI Workshop, Nineteenth National Conference on Artificial Intelligence. 
+
 [42] Patrick W. Jordan. 2000. Designing Pleasurable Products: An Introduction to the New Human Factors. Taylor & Francis, London. 
+
 [43] Mallory Ketcheson, Luke Walker, and T.C. Nicholas Graham. 2016. Thighrim and Calf-Life: A Study of the Conversion of Off-the-Shelf Video Games into Exergames. In Proceedings of the 2016 CHI Conference on Human Factors in Computing Systems (CHI ’16). ACM, New York, NY, USA, 2681–2692. https://doi.org/10.1145/2858036.2858406 
+
 [44] Rilla Khaled and Gordon Ingram. 2012. Tales from the front lines of a largescale serious game project. In Proceedings of CHI 2012. ACM Press, 69–78. https://doi.org/10.1145/2207676.2207688 
+
 [45] Annakaisa Kultima. 2015. Game Design Research. In Proceedings of the 19th International Academic Mindtrek Conference (AcademicMindTrek ’15). ACM, New York, NY, USA, 18–25. https://doi.org/10.1145/2818187.2818300 
+
 [46] Youn-Kyung Lim, Erik Stolterman, and Josh Tenenberg. 2008. The anatomy of prototypes: Prototypes as filters, prototypes as manifestations of design ideas. ACM Trans. Comput.-Hum. Interact. 15, Article 7 (July 2008), 27 pages. Issue 2. https://doi.org/10.1145/1375761.1375762 
+
 [47] Regan Mandryk, Kori Inkpen, and Tom Calvert. 2006. Using Psychophysiological Techniques to Measure User Experience with Entertainment Technologies. Behaviour and Information Technology (Special Issue on User Experience 25, 2 (2006), 141–158.
+
 [48] Joe Marshall, Conor Linehan, and Adrian Hazzard. 2016. Designing Brutal Multiplayer Video Games. In Proceedings of the 2016 CHI Conference on Human Factors in Computing Systems (CHI ’16). ACM, New York, NY, USA, 2669–2680. https://doi.org/10.1145/2858036.2858080  [49] Jean McNiff. 2013. Action Research: Principles and Practice. Routledge.  
+
 [50] Florian Mueller and Katherine Isbister. 2014. Movement-based Game Guidelines. In Proceedings of the 32Nd Annual ACM Conference on Human Factors in Computing Systems (CHI ’14). ACM, New York, NY, USA, 2191–2200. https://doi.org/10.1145/2556288.2557163 
+
 [51] Janet Horowitz Murray. 1997. Hamlet on the Holodeck: The Future of Narrative in Cyberspace. The Free Press, New York, NY, USA. 
+
 [52] Nintendo. 2003. WarioWare. WarioWare, Inc.: Mega Microgames!. (2003). 
+
 [53] Donald A. Norman. 1990. The Psychology of Everyday Things. Basic Books, New York. 
+
 [54] James Pierce. 2014. On the Presentation and Production of Design Research Artifacts in HCI. In Proceedings of the 2014 Conference on Designing Interactive Systems (DIS ’14). ACM, New York, NY, USA, 735–744. https://doi.org/10. 1145/2598510.2598525 
+
 [55] Matt Ratto. 2011. Critical Making: Conceptual and Material Studies in Technology and Social Life. The Information Society 27, 4 (2011), 252–260. https://doi.org/10.1080/01972243.2011.583819 
+
 [56] Tom Regan. 2017. Recreate the thrills of ’90s PC admin in this browser game. (2017). https://www.engadget.com/2017/07/06/recreate-the-thrills-of-90s-pc-admin-in-this-browser-game/ 
+
 [57] Jesse Schell. 2008. The Art of Game Design: A book of lenses (1 ed.). Morgan Kaufmann.  
+
 [58] Donald A. Schön. 1983. The Reflective Practitioner: How Professionals Think in Action. Basic Books. 
+
 [59] Ben Shneiderman. 2004. Designing for Fun: How Can We Design User Interfaces to Be More Fun? interactions 11, 5 (Sept. 2004), 48–50. https://doi.org/10.1145/1015530.1015552 
+
 [60] Herbert A. Simon. 1996. The Sciences of the Artificial (3rd Ed.). MIT Press, Cambridge, MA, USA. 
+
 [61] Anselm Strauss and Juliet M. Corbin. 1998. Basics of Qualitative Research : Techniques and Procedures for Developing Grounded Theory. SAGE Publications. 
+
 [62] T.L. Taylor. 2002. Whose game is this anyway? Negotiating corporate ownership in a virtual world. In Computer Games and Digital Cultures Conference Proceedings. Tampere University Press, 227–242. 
+
 [63] James Vincent. 2017. Relive the Windows 95 glory days with this work simulation game. (July 2017). https://www.theverge.com/tldr/2017/7/6/15927338/work-simulation-game-windows-95-pippin-barr 
+
 [64] Sebastien Wesolowski. 2017. “It is as if you were doing work”, un simulateur de travail pour un monde postemploi. (2017). https://motherboard.vice.com/fr/article/8xaq4a/it-is-as-if-you-were-doing-work-un-simulateur-de-travail-pour-un-monde-post-emploi 
+
 [65] Raymond Williams. 2003. Television: Technology and Cultural Form. Routledge. 
+
 [66] Jerry Willis. 2007. Foundations of qualitative research: Interpretive and critical approaches. Thousand Oaks, SAGE PUBLISHING, CA. 
+
 [67] Zhao Zhao, Ali Arya, Anthony Whitehead, Gerry Chan, and S. Ali Etemad. 2017. Keeping Users Engaged Through Feature Updates: A Long-Term Study of Using Wearable-Based Exergames. In Proceedings of the 2017 CHI Conference on Human Factors in Computing Systems (CHI ’17). ACM, New York, NY, USA, 1053–1064. https://doi.org/10.1145/3025453.3025982 
+
 [68] John Zimmerman, Jodi Forlizzi, and Shelley Evenson. 2007. Research Through Design As a Method for Interaction Design Research in HCI. In Proceedings of the SIGCHI Conference on Human Factors in Computing Systems (CHI ’07). ACM, New York, NY, USA, 493–502. https://doi.org/10.1145/1240624.1240704
 
 ----
