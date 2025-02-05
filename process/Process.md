@@ -1,6 +1,18 @@
 
 # February 4th 2025 
 
+## 9:45 PM 
+
+Okay lets begin. I want to start and take prototype zero to a far enough state. As for the template Im using for repository, I'll change the home screen to the different prototypes. 
+I have to first make a paper into an MD file. 
+
+--- 10:09 PM MacOS wants to update now, fuckin A... brb 
+--- 10:54 Back in action.
+
+Paper converted 
+End of day
+
+
 ## 11:20 AM 
 Okay. I've been processing this for about 2 months in my head and it is finally go time. I imagine this system as one base prototype that provides the core structure of an academic article, and then 4 other prototypes that use this base structure to build other interactions on top of it. 
 
