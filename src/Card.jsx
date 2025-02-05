@@ -13,7 +13,7 @@ function Card({ name, description, actionText, onAction }) {
             tabIndex={0}
             aria-label={actionText}
           >
-            {"Action >"} 
+            { actionText +  " >"} 
           </button>
         </div>
       </div>
