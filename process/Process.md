@@ -1,11 +1,34 @@
 
 # February 5th 2025 
 
-## 12:00AM 
-Fixed the problems with MD on github. Dont know why though, its kinda irrelevant to my purpose... lol  
-Anyway. Whats next?
+## 8:06AM 
+Continuing, setting up the boilerplate stuff -- done 
 
-I'll stop here and move to writing and let this stir in my mind. I need a throughline of execution - like the thread for tanjiro. 
+I can begin coding the first prototype.
+For this, I need to 
+1. read the MD file and bring it into its constituent parts. These will be:
+	1. The headings 
+	2. The sections 
+	3. The paragraphs 
+	4. The references & bibliography 
+	5. The footnotes 
+	6. The figures and figure references
+2. then I need to put them on the screen. One section goes the whole way, one paragraph highlighted at a time. Switch sections horizontally. 
+3. Once this is done, I'm interested in:
+	1. Changing citation style, font size, font family (serif and sans serif), and line spacing up to the reader. Put citations and footnotes on hover 
+	2. A word highlighter that the reader gets to shift with the arrow key and it helps the reader focus on the paper. arrow keys are used to move between the arrow  
+	3. In this one, I also need to lay extra emphasis on metacues. In print form, we have the thickness of the page and we can move forward or backwards at a non-linear pace, we can skim in a different way than we do on screen... perhaps a way to see the whole of the paper and then hover the mouse on the page to see it in a more readable form... 
+	4. Hover really is a brilliant interaction it affords "kinda". as in... unlike other transitions which are integral, black and white, hover invites me "come inside, have a look dearie" and if you like something, take the next step. 
+4. prototype zero is about only reading. prototype one is going to be about writing alongside reading. The prototype two works with shifting things around, which also includes opening multiple pages at once and connecting things together in them; concept maps and the sort. As for four, Im wondering if its interesting to put some AI into this that *forces* the reader to read. This makes it the edgy part again. A co-reader that pushes you to write as you read. try to make the reader uncomfortable or challenge with questions?
+5. I still havent gotten a good answer about: what do we want to do when we read on screen? How does a computer afford and how do we want to read. On a paper we can run a pencil along the text but on screen we cant do that. But really: What do we want to do when we read on a screen? HOW Do we want to read on a screen? 
+
+Stopping at: 12:15PM 
+
+## 12:00AM 
+Fixed the problems with MD on github. Don't know why though, its kinda irrelevant to my purpose... lol  
+Anyway. Whats next? 
+
+I'll stop here and move to writing and let this stir in my mind. I need a throughline of execution - like the thread for Tanjiro. 
 Stopped 12:32AM 
 
 
@@ -38,18 +61,18 @@ I think for prototype zero this idea of meta-cues is of peak importance. This is
 I am yet to think of how sub-sections should be dealt with but I will figure that out once this much is in. 
 
 As for the other prototypes, I have some main ideas . 
-1. Writing and Rewriting layers
+6. Writing and Rewriting layers
 	1. to engage with a text we need to be able to write our thoughts. As Eric hayot writes, we dont write what we have thought, we write to think. (case in point, this very journal).
-2. Ability to restructure the paper
+7. Ability to restructure the paper
 	1. People don't read a paper in the same order as is put together by a publisher, they read it usually first as abstract only, then introduction and conclusion, then maybe some survey of the methodology and look at the discussions 
 	2. Point being: the ability to focus in on things that
-3. concept map -- nodes 
-4. deep references 
+8. concept map -- nodes 
+9. deep references 
 	1. The ability to reference the nodes or markers in *other* papers? how would this work 
-5. manual markers
+10. manual markers
 	1. Like bookmarks at different spots of the paper drawing a through-line through the paper.  
-6. lowlighting 
+11. lowlighting 
 	1. the reverse of highlighting? Would this be useful? How would this make the reader feel? 
-7. Still curious to think of something that would be somewhat... *edgy* like *forcing* a user to be an active reader. 
+12. Still curious to think of something that would be somewhat... *edgy* like *forcing* a user to be an active reader. 
 
 Stopped: 11:44 AM 
