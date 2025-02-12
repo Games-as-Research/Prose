@@ -1,4 +1,11 @@
+# February 11th 2025 
 
+## 2:54 PM 
+I paused for a bit to read the theoretical stuff a bit more to develop my prototypes on. Another roadblock in there was the red journal stuff - it was all on paper and I had to digitize it which I hadn't done. When my notes arent digitized I cant put them together, search with them. Since I write in digital, my notes need to be in the digital medium because switching modalities has a significant overhead as well. This has been a good exercise in investigating my own weaknesses and things I need to maintain. Today I come back to coding this. 
+
+Also that I was just so goddamn depleted I needed some rest. 
+
+Stopping 2:59PM -- going back to reading and writing. 
 # February 5th 2025 
 
 ## 8:06AM 
