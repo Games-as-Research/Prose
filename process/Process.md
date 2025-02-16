@@ -1,13 +1,21 @@
 
+# February 15th 2025
+
+## 3:32 PM 
+I've read, thought, and designed things. I also have been away for the symposium. Here goes the final stretch of work. 
+
+
+
+
 # February 12th 2025 
 
 ## 12:48 PM 
-I think I've read enough -- I need to move to building. Im going to start again in a couple hours. What I need is to bring the text in and start playing with it. 
+I think I've read enough -- I need to move to building. I'm going to start again in a couple hours. What I need is to bring the text in and start playing with it. 
 
 Prototype Zero is about meta-cues. Its about the direct interaction with the text on the screen. 
 
 
-One thing I think that should be there in digital, interactive text is visual aids. And in this translation Im doing of the paper,  
+One thing I think that should be there in digital, interactive text is visual aids. And in this translation I'm doing of the paper,  
 
 
 # February 11th 2025 
