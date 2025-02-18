@@ -8,8 +8,8 @@ export const data = [
     id: "item-1",
     name: "Prototype Zero",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum",
-    actionText: "Test Prototype",
+      "Prototype Zero deals with the erasure of the reader-article boundary. This incorporates the bare minimum form of the academic article that needs to be present. A section must scroll vertically -- it is continuous. Changes between sections are horizontal -- they are distinct and perhaps almost like pagination. Abstracts are not needed throughout the essay so they are conditionally present -- hover over the title to view the abstract. ",
+    actionText: "Try Prototype",
     route: "/zero",
   },
   {
@@ -27,15 +27,6 @@ export const data = [
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum",
     actionText: "Test Prototype",
     route: "/two",
-  },
-
-  {
-    id: "item-4",
-    name: "Prototype Three",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum",
-    actionText: "Test Prototype",
-    route: "/three",
   },
 ];
 
