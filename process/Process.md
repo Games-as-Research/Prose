@@ -1,3 +1,29 @@
+# February 18th 2025 
+
+## 11:00 AM 
+8. Modelling the paper as a graph -- the current and the next 
+9. Demonstrating the need for a paradigm shift from academic articles as files to academic articles as software 
+	1. Erasing the boundary between the reader and the paper. The form of the reader must be the form of the paper 
+	2. Prototype zero 
+10. The design space of The Digital Academic Article. the problem setting and the problem solving
+
+Paper allows for reeading AND writing and with its persistence it also encourages being able to think alongside reading. Writing is how we think. 
+What is writing like in PDFs? 
+
+This one is focused on reading. I think when the translation from paper to screen happened we only focused on the superficial functions of reading not the underlying intentions and motivations. 
+
+When we put it like this we realize, an article to read needs also to be an article to write. An article needs to be part of something I am writing
+
+
+
+
+## 8:35 AM
+Darling you've got to let me know
+should I write or should I code? 
+
+I think I need to write first so I have some understanding of what Im reflecting on, and so I also have theoretical solid grounds to build on. I should write first because I need to get my thoughts in order. I can change the writing later as well. 
+
+
 # February 17th 2025 
 
 ## 3:54 PM
@@ -53,10 +79,10 @@ Nodes is an interesting idea and goes very well with highighting. Generally, any
 I think a highlight can be a node but a node is not necessarily a highlight. 
 The smallest unit of a node is a word. The largest unit may be a paragraph? Or maybe nodes can be constructs in an essay... 
 Constructs would include: 
-4. word
-5. sentence 
-6. paragraph 
-7. section (and sub sections)
+11. word
+12. sentence 
+13. paragraph 
+14. section (and sub sections)
 
 
 I was thinking of reconfiguration as an affordance. If I were to think of this in the simplest form it would be displaying different sections at once to draw connections. But then if I think about it some more, it is about guiding my attention. If I were to reconfigure the article I would remove sections, I would change the order, I would hide some paragraphs that are not relevant. I would try and maybe extract the through-line of the essay. I would do the things one does when active reading an article. So the next question is: What do we do when we are active reading? And not just the actions -- since those are determined by affordances of the medium (someone wielding a sword kills differently than someone wielding a bow and arrow) -- but the intention.
@@ -128,21 +154,21 @@ Continuing, setting up the boilerplate stuff -- done
 
 I can begin coding the first prototype.
 For this, I need to 
-8. read the MD file and bring it into its constituent parts. These will be:
+15. read the MD file and bring it into its constituent parts. These will be:
 	1. The headings 
 	2. The sections 
 	3. The paragraphs 
 	4. The references & bibliography 
 	5. The footnotes 
 	6. The figures and figure references
-9. then I need to put them on the screen. One section goes the whole way, one paragraph highlighted at a time. Switch sections horizontally. 
-10. Once this is done, I'm interested in:
+16. then I need to put them on the screen. One section goes the whole way, one paragraph highlighted at a time. Switch sections horizontally. 
+17. Once this is done, I'm interested in:
 	1. Changing citation style, font size, font family (serif and sans serif), and line spacing up to the reader. Put citations and footnotes on hover 
 	2. A word highlighter that the reader gets to shift with the arrow key and it helps the reader focus on the paper. arrow keys are used to move between the arrow  
 	3. In this one, I also need to lay extra emphasis on metacues. In print form, we have the thickness of the page and we can move forward or backwards at a non-linear pace, we can skim in a different way than we do on screen... perhaps a way to see the whole of the paper and then hover the mouse on the page to see it in a more readable form... 
 	4. Hover really is a brilliant interaction it affords "kinda". as in... unlike other transitions which are integral, black and white, hover invites me "come inside, have a look dearie" and if you like something, take the next step. 
-11. prototype zero is about only reading. prototype one is going to be about writing alongside reading. The prototype two works with shifting things around, which also includes opening multiple pages at once and connecting things together in them; concept maps and the sort. As for four, Im wondering if its interesting to put some AI into this that *forces* the reader to read. This makes it the edgy part again. A co-reader that pushes you to write as you read. try to make the reader uncomfortable or challenge with questions?
-12. I still havent gotten a good answer about: what do we want to do when we read on screen? How does a computer afford and how do we want to read. On a paper we can run a pencil along the text but on screen we cant do that. But really: What do we want to do when we read on a screen? HOW Do we want to read on a screen? 
+18. prototype zero is about only reading. prototype one is going to be about writing alongside reading. The prototype two works with shifting things around, which also includes opening multiple pages at once and connecting things together in them; concept maps and the sort. As for four, Im wondering if its interesting to put some AI into this that *forces* the reader to read. This makes it the edgy part again. A co-reader that pushes you to write as you read. try to make the reader uncomfortable or challenge with questions?
+19. I still havent gotten a good answer about: what do we want to do when we read on screen? How does a computer afford and how do we want to read. On a paper we can run a pencil along the text but on screen we cant do that. But really: What do we want to do when we read on a screen? HOW Do we want to read on a screen? 
 
 Stopping at: 12:15PM 
 
@@ -183,19 +209,19 @@ I think for prototype zero this idea of meta-cues is of peak importance. This is
 I am yet to think of how sub-sections should be dealt with but I will figure that out once this much is in. 
 
 As for the other prototypes, I have some main ideas . 
-13. Writing and Rewriting layers
+20. Writing and Rewriting layers
 	1. to engage with a text we need to be able to write our thoughts. As Eric hayot writes, we dont write what we have thought, we write to think. (case in point, this very journal).
-14. Ability to restructure the paper
+21. Ability to restructure the paper
 	1. People don't read a paper in the same order as is put together by a publisher, they read it usually first as abstract only, then introduction and conclusion, then maybe some survey of the methodology and look at the discussions 
 	2. Point being: the ability to focus in on things that
-15. concept map -- nodes 
-16. deep references 
+22. concept map -- nodes 
+23. deep references 
 	1. The ability to reference the nodes or markers in *other* papers? how would this work 
-17. manual markers
+24. manual markers
 	1. Like bookmarks at different spots of the paper drawing a through-line through the paper.  
-18. lowlighting 
+25. lowlighting 
 	1. the reverse of highlighting? Would this be useful? How would this make the reader feel? 
-19. Still curious to think of something that would be somewhat... *edgy* like *forcing* a user to be an active reader. 
+26. Still curious to think of something that would be somewhat... *edgy* like *forcing* a user to be an active reader. 
 
 **Stopped: 11:44 AM** 
  
@@ -211,7 +237,7 @@ As for the other prototypes, I have some main ideas .
 
 Why game-design research to illustrate the concept? Why playful ways to communicate research? 
 
-20. already plenty of science, computer science and programming examples 
+27. already plenty of science, computer science and programming examples 
 
 I think Game design is a nice deviation. It is also that game design is focused significantly on digital games. While all games are interactive, digital games lend themselves nicely to illustrate the argument of playful/playable/interactive research communication.
 It is also that game design is such an inter/multi/trans disciplinary area that arguments that apply to game design can then be applied to other — more “serious” — areas of study. 
@@ -317,10 +343,10 @@ That is, at what point does it stop being the affordances of the reader and star
 How is an affordance not the affordance of the e-reader? 
 Where do we draw the line between the form of the paper itself and the form of the e-reader? 
 
-21. A PDF contains data
-22. Data goes into the reader 
-23. Reader parses the data and displays it
-24. If the reader alters the way it parses the data, has it become a new form? And is this a new form of the paper? 
+28. A PDF contains data
+29. Data goes into the reader 
+30. Reader parses the data and displays it
+31. If the reader alters the way it parses the data, has it become a new form? And is this a new form of the paper? 
 
 So the question arises: what is the form of the paper? Is the paper itself formless?  
 
@@ -340,24 +366,24 @@ This research is not about replacing the print form, but establishing a unique f
 What does digital-first even mean?
 
 Who am I writing this thesis for? 
-25. The ==audience is people like who I was when I started on this==. So when I present a literature review, I write it such that it encapsulates all the efforts that have gone into this, historically. 
-26. when I write ==the introduction it is to explain to such a reader what Im doing as a whole and why this is worthwhile.== 
-27. This is not about criticizing others but more ==about synthesizing everything== that has come before so as to not repeat their mistakes/lacking and to build on top of their successes for the purpose. 
-28. The ==methodology is supposed to express how I'm going to go about the research==. As a master's student, the purpose of the thesis is to demonstrate that I am capable of going about research independently. So I should be able to select appropriate methods for my research. 
-29. The part that confuses me is whatever I build, ==how do I validate it?== How do I prove what I've built works and is valuable?
-30. If I am able to deconstruct what I am building into parts - as I build it - and I am able to relate this to other research and argue for how this would support the learning process from reading in this form, then I think there is something there. 
-31. If I can justify every part of the creation with other research, then I think I have something to stand on. 
-32. The whole ought to be greater than the sum of its parts. 
-33. This is a research-creation thesis so the challenge of any other creation thesis should apply to this. For this I should read up the 
+32. The ==audience is people like who I was when I started on this==. So when I present a literature review, I write it such that it encapsulates all the efforts that have gone into this, historically. 
+33. when I write ==the introduction it is to explain to such a reader what Im doing as a whole and why this is worthwhile.== 
+34. This is not about criticizing others but more ==about synthesizing everything== that has come before so as to not repeat their mistakes/lacking and to build on top of their successes for the purpose. 
+35. The ==methodology is supposed to express how I'm going to go about the research==. As a master's student, the purpose of the thesis is to demonstrate that I am capable of going about research independently. So I should be able to select appropriate methods for my research. 
+36. The part that confuses me is whatever I build, ==how do I validate it?== How do I prove what I've built works and is valuable?
+37. If I am able to deconstruct what I am building into parts - as I build it - and I am able to relate this to other research and argue for how this would support the learning process from reading in this form, then I think there is something there. 
+38. If I can justify every part of the creation with other research, then I think I have something to stand on. 
+39. The whole ought to be greater than the sum of its parts. 
+40. This is a research-creation thesis so the challenge of any other creation thesis should apply to this. For this I should read up the 
 
 **Questions**
-34. What is it that I'm doing when I'm reading academic text? 
-35. And How can the digital form help me do this better? 
-36. Is the current digital form doing that for me? 
-37. How do we read academically? 
-38. How does the digital form afford now? What are the affordances of a PDF in adobe? 
-39. How is this digital form better than the print form and how is the print form better than the digital form? 
-40. Under what conditions would people choose the digital form over the print form? 
+41. What is it that I'm doing when I'm reading academic text? 
+42. And How can the digital form help me do this better? 
+43. Is the current digital form doing that for me? 
+44. How do we read academically? 
+45. How does the digital form afford now? What are the affordances of a PDF in adobe? 
+46. How is this digital form better than the print form and how is the print form better than the digital form? 
+47. Under what conditions would people choose the digital form over the print form? 
 
 
 
@@ -377,9 +403,9 @@ What I need now is of the entire list that I have stuff in, I need subset of all
 
 ---
 I was reading these articles here: 
-41. https://medium.com/@Max_Goldstein/exploring-explorable-explanations-92f865c8d6ba
-42. https://worrydream.com/ExplorableExplanations/
-43. https://docs.google.com/document/d/18zU3b51sPWoImlR_XXODTDeP6n9oIscouvpidXAr6Gs/edit?pli=1&tab=t.0
+48. https://medium.com/@Max_Goldstein/exploring-explorable-explanations-92f865c8d6ba
+49. https://worrydream.com/ExplorableExplanations/
+50. https://docs.google.com/document/d/18zU3b51sPWoImlR_XXODTDeP6n9oIscouvpidXAr6Gs/edit?pli=1&tab=t.0
 
 # December 11th 2024 
 
@@ -423,17 +449,17 @@ Deadlinks a common problem.
 There is some work on the future of the academic article and that is exactly where my research lies but the question really is, what *is* that domain?  
 
 Links: 
-44. [Envisioning the scientific paper of the future](https://www.facetsjournal.com/doi/10.1139/facets-2019-0012#:~:text=We%20review%20four%20essential%20qualities,measurable%20impact%20beyond%20Impact%20Factor.)
-45. [The future of Academic publishing](https://www.nature.com/articles/s41562-023-01637-2)
-46. [Open Access and the Future of the Scientific Research Article](https://pmc.ncbi.nlm.nih.gov/articles/PMC6674633/)
-47. [Beyond the journal: The future of scientific publishing](https://network.febs.org/posts/beyond-the-journal-the-future-of-scientific-publishing)
-48. [The Scientific Paper Is Obsolete](https://www.theatlantic.com/science/archive/2018/04/the-scientific-paper-is-obsolete/556676/)
-49. [Elsevier's article 2.0 contest](https://scholarlykitchen.sspnet.org/2008/10/14/elseviers-article-20-contest/)
-50. [The “Article of the Future” — Just Lipstick Again?](https://scholarlykitchen.sspnet.org/2009/07/21/the-article-of-the-future-lipstick-on-a-pig/)
-51. Lee, S. H. (2013). Print vs. Digital: The Future of Coexistence (for. .). _URN:ISBN:9780-2-0370-591-9_.
-52. [how problematic is e-reading?](https://www.thenewatlantis.com/text-patterns/how-problematic-is-e-reading)
-53. [How E-Reading Threatens Learning in the Humanities](https://www.chronicle.com/article/how-e-reading-threatens-learning-in-the-humanities/)
-54. [Theses in Canada on "Digital Academic Reading"](https://library-archives.canada.ca/eng/services/services-libraries/theses/Pages/list.aspx?AW_S=Digital+Academic+Reading+#result_table)
+51. [Envisioning the scientific paper of the future](https://www.facetsjournal.com/doi/10.1139/facets-2019-0012#:~:text=We%20review%20four%20essential%20qualities,measurable%20impact%20beyond%20Impact%20Factor.)
+52. [The future of Academic publishing](https://www.nature.com/articles/s41562-023-01637-2)
+53. [Open Access and the Future of the Scientific Research Article](https://pmc.ncbi.nlm.nih.gov/articles/PMC6674633/)
+54. [Beyond the journal: The future of scientific publishing](https://network.febs.org/posts/beyond-the-journal-the-future-of-scientific-publishing)
+55. [The Scientific Paper Is Obsolete](https://www.theatlantic.com/science/archive/2018/04/the-scientific-paper-is-obsolete/556676/)
+56. [Elsevier's article 2.0 contest](https://scholarlykitchen.sspnet.org/2008/10/14/elseviers-article-20-contest/)
+57. [The “Article of the Future” — Just Lipstick Again?](https://scholarlykitchen.sspnet.org/2009/07/21/the-article-of-the-future-lipstick-on-a-pig/)
+58. Lee, S. H. (2013). Print vs. Digital: The Future of Coexistence (for. .). _URN:ISBN:9780-2-0370-591-9_.
+59. [how problematic is e-reading?](https://www.thenewatlantis.com/text-patterns/how-problematic-is-e-reading)
+60. [How E-Reading Threatens Learning in the Humanities](https://www.chronicle.com/article/how-e-reading-threatens-learning-in-the-humanities/)
+61. [Theses in Canada on "Digital Academic Reading"](https://library-archives.canada.ca/eng/services/services-libraries/theses/Pages/list.aspx?AW_S=Digital+Academic+Reading+#result_table)
 
 A lot of the discourse in the future of scientific publication centres upon *open access*. What about the form of said publication? 
 How can we make a form that the end user doesnt feel the need to print? How can we create a digital-first form, that is inherently superior to the print form in that it affords so much more than the print form? 
@@ -441,16 +467,16 @@ How can we make a form that the end user doesnt feel the need to print? How can 
 ----
 Lit Review Section guidleines:
 
-55. “Reading from paper compared to screens: A systematic review and metaanalysis” 
-56. Digital Humanities 
+62. “Reading from paper compared to screens: A systematic review and metaanalysis” 
+63. Digital Humanities 
 	1. Digital Editions - The skeuomorphism of texts 
 	2. Born-Digital Dissertations 
 	3. Topic Modelling 
-57. Talk about “From papyrus to hypertext: toward the universal digital library”
-58. Digital v/s Paper reading (primarily academic): (3) 
+64. Talk about “From papyrus to hypertext: toward the universal digital library”
+65. Digital v/s Paper reading (primarily academic): (3) 
 	4. problems with digital (academic/post-secondary) reading    
 	5. Inadequacies of the print-form 
-59. Digita Reading  (3)
+66. Digita Reading  (3)
 	6. PostPrint    
 	7. Affordances of Digital Reading 
 	8. RCS, other interactive reading projects
@@ -459,9 +485,9 @@ Contextualize this problem within the general scheme of digital reading, as the 
 
 --- 
 Read so far: 
-1. Kuteeva, M., & Mauranen, A. (2018). Digital academic discourse: Texts and contexts. _Discourse, Context & Media_, _24_, 1–7. [https://doi.org/10.1016/j.dcm.2018.06.001](https://doi.org/10.1016/j.dcm.2018.06.001)
-2. Sanz, A., & Romero, D. (Eds.). (2007). _Literatures in the Digital Era: Theory and Praxis_. Cambridge Scholars Pub. [https://archive.org/details/literaturesindig0000unse/page/n11/mode/2up](https://archive.org/details/literaturesindig0000unse/page/n11/mode/2up) 
-3. Aalbersberg, Ij. J., Heeman, F., Koers, H., & Zudilova-Seinstra, E. (2012). Elsevier’s **Article of the Future** enhancing the user experience and integrating data through applications. _Insights: The UKSG Journal_, _25_(1), 33–43. [https://doi.org/10.1629/2048-7754.25.1.33](https://doi.org/10.1629/2048-7754.25.1.33)
+67. Kuteeva, M., & Mauranen, A. (2018). Digital academic discourse: Texts and contexts. _Discourse, Context & Media_, _24_, 1–7. [https://doi.org/10.1016/j.dcm.2018.06.001](https://doi.org/10.1016/j.dcm.2018.06.001)
+68. Sanz, A., & Romero, D. (Eds.). (2007). _Literatures in the Digital Era: Theory and Praxis_. Cambridge Scholars Pub. [https://archive.org/details/literaturesindig0000unse/page/n11/mode/2up](https://archive.org/details/literaturesindig0000unse/page/n11/mode/2up) 
+69. Aalbersberg, Ij. J., Heeman, F., Koers, H., & Zudilova-Seinstra, E. (2012). Elsevier’s **Article of the Future** enhancing the user experience and integrating data through applications. _Insights: The UKSG Journal_, _25_(1), 33–43. [https://doi.org/10.1629/2048-7754.25.1.33](https://doi.org/10.1629/2048-7754.25.1.33)
 
 # December 9th 2024
 
