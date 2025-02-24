@@ -54,9 +54,8 @@ const ArticleAbstract = (props) => {
   if (!PC.showAbstract) {
     return (
       <h1
-        className="text-center text-md text-wrap mx-1 font-bold py-4"
-        onMouseOver={() => (hold ? null : PC.setShowAbstract(true))}
-        onClick={() => setHold(!hold)}
+        className="text-center text-md text-wrap mx-1 font-bold py-4 mb-1 hover:bg-slate-100 cursor-pointer"
+        onClick={() => (hold ? null : PC.setShowAbstract(true))}
       >
         {props.title}
       </h1>
@@ -83,7 +82,7 @@ const ArticleAbstract = (props) => {
       </p>
       <h2
         className="text-center text-md my-5 mx-4 font-semibold"
-        style={{ color: hold ? "blue" : "black" }}
+        style={{ color: hold ? "red" : "black" }}
       >
         Abstract
       </h2>
