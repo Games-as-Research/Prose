@@ -2,7 +2,7 @@ import Markdown from "react-markdown";
 import { ScreenContainer } from "../common";
 import PrototypeContext, { PrototypeProvider } from "./prototypeContext";
 import { useContext, useState } from "react";
-import { Slider } from "antd";
+import { Col, InputNumber, Row, Slider, Space } from "antd";
 
 const One = (props) => {
   return (
@@ -145,7 +145,13 @@ const ArticleSection = (props) => {
       <div className="flex flex-col overflow-y-scroll rounded-md">
         {props.content?.map((item, idx) => {
           return (
-            <div className="flex flex-row py-2 mx-4">
+            <div
+              className={"flex flex-row py-2"}
+              style={{
+                marginLeft: PC.horizontalMargins,
+                marginRight: PC.horizontalMargins,
+              }}
+            >
               {item?.slice(0, 2) !== "##" ? (
                 <p className="self-center text-xs font-light text-slate-400 font-sans">
                   {++para_count}
@@ -154,7 +160,7 @@ const ArticleSection = (props) => {
               <Markdown
                 key={idx}
                 className={
-                  "text-justify text-wrap text-sm px-2 rounded-lg hover:font-semibold hover:-translate-y-1  hover:text-sm hover:bg-slate-200 hover:shadow-md  " +
+                  "text-justify text-wrap text-sm px-2 rounded-lg hover:font-semibold hover:-translate-y-1 hover:text-sm hover:bg-slate-200 hover:shadow-md  " +
                   (PC.version === 1.1
                     ? "transition delay-50 duration-300 ease-in-out "
                     : "")
@@ -195,7 +201,22 @@ const ControlPanel = (props) => {
       <h1 className="text-white  font-medium text-md">
         Prototype One: Metainteractions & Metacues
       </h1>
-      <div className="flex flex-row w-[20%] justify-between">
+      <div className="flex flex-row w-[30%] justify-evenly">
+        <div className="bg-white w-20 rounded-md px-2">
+          <Slider
+            min={4}
+            step={4}
+            max={300}
+            onChange={(val) => {
+              PC.setHorizontalMargins(val);
+            }}
+            value={
+              typeof PC.horizontalMargins === "number"
+                ? PC.horizontalMargins
+                : 4
+            }
+          />
+        </div>
         <button
           className="bg-white text-black text-sm p-1 rounded-md hover:bg-slate-400"
           onClick={PC.ChangeVersion}

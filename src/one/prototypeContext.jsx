@@ -8,6 +8,7 @@ export const PrototypeProvider = (props) => {
   const [section, setSection] = useState(0);
   const [fontFam, setFontFam] = useState("font-serif");
   const [version, setVersion] = useState(1.0);
+  const [horizontalMargins, setHorizontalMargins] = useState(4);
 
   function NextSection() {
     if (section === ArticleData.sections.length) {
@@ -49,9 +50,11 @@ export const PrototypeProvider = (props) => {
         ArticleData,
         fontFam,
         version,
+        horizontalMargins,
 
         showAbstract,
         section,
+        setHorizontalMargins,
         setShowAbstract,
         NextSection,
         PreviousSection,
