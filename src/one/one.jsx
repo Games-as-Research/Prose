@@ -202,33 +202,36 @@ const ControlPanel = (props) => {
         Prototype One: Metainteractions & Metacues
       </h1>
       <div className="flex flex-row w-[30%] justify-evenly">
-        <div className="bg-white w-20 rounded-md px-2">
-          <Slider
-            min={4}
-            step={4}
-            max={300}
-            onChange={(val) => {
-              PC.setHorizontalMargins(val);
-            }}
-            value={
-              typeof PC.horizontalMargins === "number"
-                ? PC.horizontalMargins
-                : 4
-            }
-          />
-        </div>
-        <button
-          className="bg-white text-black text-sm p-1 rounded-md hover:bg-slate-400"
-          onClick={PC.ChangeVersion}
-        >
-          Version {PC.version}
-        </button>
+        {PC.version === 1.1 ? (
+          <div className="bg-white w-[40%] rounded-md px-2">
+            <Slider
+              min={4}
+              step={4}
+              max={300}
+              onChange={(val) => {
+                PC.setHorizontalMargins(val);
+              }}
+              value={
+                typeof PC.horizontalMargins === "number"
+                  ? PC.horizontalMargins
+                  : 4
+              }
+            />
+          </div>
+        ) : null}
 
         <button
           className="bg-white text-black text-sm p-1 rounded-md hover:bg-slate-400"
           onClick={PC.SwitchFont}
         >
           {PC.fontFam.replace("-", " ")}
+        </button>
+
+        <button
+          className="bg-white text-black text-sm p-1 rounded-md hover:bg-slate-400"
+          onClick={PC.ChangeVersion}
+        >
+          Version {PC.version}
         </button>
       </div>
     </div>
