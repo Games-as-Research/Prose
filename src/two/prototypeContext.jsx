@@ -58,6 +58,7 @@ export const PrototypeProvider = (props) => {
         // Referencing Bibliography
         setWriting(writing + "\n\n[" + para.toString() + "]:");
       } else {
+        if (version === 1.0) {
           setWriting(
             writing +
               "\n\nSection " +
@@ -66,6 +67,11 @@ export const PrototypeProvider = (props) => {
               para.toString() +
               "\n"
           );
+        } else if (version === 1.1) {
+          setWriting(
+            writing + "\n\n[S" + (section + 1) + ".P" + para.toString() + "]:"
+          );
+        }
       }
     }
   }
