@@ -193,7 +193,7 @@ const ControlPanel = (props) => {
   const PC = useContext(PrototypeContext);
   return (
     <div className="bg-black text-white w-screen flex flex-row p-4 font-mono justify-between">
-      <h1 className="text-white  font-medium text-md">
+      <h1 className="text-white  font-medium text-md self-center">
         Prototype Two: Writing
       </h1>
       <div className="flex flex-row w-[30%] justify-evenly">
