@@ -16,17 +16,25 @@ export const data = [
     id: "item-2",
     name: "Prototype One",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum",
-    actionText: "Test Prototype",
+      "Prototype One enhances the interface with meta-interactions and meta-cues. This is meant to demonstrate the importance of these seemingly invisible responses that the system sends to the users.",
+    actionText: "Try Prototype",
     route: "/one",
   },
   {
     id: "item-3",
     name: "Prototype Two",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum",
-    actionText: "Test Prototype",
+      "Prototype Two introduces writing alongside the reading.",
+    actionText: "Try Prototype",
     route: "/two",
+  },
+  {
+    id: "item-4",
+    name: "Prototype Three",
+    description:
+      "Prototype Three explore integrating other media ",
+    actionText: "Try Prototype",
+    route: "/three",
   },
 ];
 
@@ -53,7 +61,7 @@ const App = () => {
           </div>
         </div>
         <div className="mt-7 text-xs font-light text-center text-white max-md:max-w-full">
-          Copyrights © Muhammad Shahrom Ali January 2025. All Rights Reserved
+          Copyrights © Muhammad Shahrom Ali 2025. All Rights Reserved
         </div>
       </div>
     </div>
