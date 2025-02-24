@@ -7,7 +7,7 @@ export const PrototypeProvider = (props) => {
   const [showAbstract, setShowAbstract] = useState(false);
   const [section, setSection] = useState(0);
   const [fontFam, setFontFam] = useState("font-serif");
-  const [version, setVersion] = useState(1.0);
+  const [version, setVersion] = useState(2.0);
   const [horizontalMargins, setHorizontalMargins] = useState(4);
 
   const [writing, setWriting] = useState(
@@ -45,10 +45,10 @@ export const PrototypeProvider = (props) => {
   }
 
   function ChangeVersion() {
-    if (version === 1.0) {
-      setVersion(1.1);
-    } else if (version === 1.1) {
-      setVersion(1.0);
+    if (version === 2.0) {
+      setVersion(2.1);
+    } else if (version === 2.1) {
+      setVersion(2.0);
     }
   }
 
@@ -58,7 +58,7 @@ export const PrototypeProvider = (props) => {
         // Referencing Bibliography
         setWriting(writing + "\n\n[" + para.toString() + "]:");
       } else {
-        if (version === 1.0) {
+        if (version === 2.0) {
           setWriting(
             writing +
               "\n\nSection " +
@@ -67,7 +67,7 @@ export const PrototypeProvider = (props) => {
               para.toString() +
               "\n"
           );
-        } else if (version === 1.1) {
+        } else if (version === 2.1) {
           setWriting(
             writing + "\n\n[S" + (section + 1) + ".P" + para.toString() + "]:"
           );
