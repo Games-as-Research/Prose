@@ -167,51 +167,51 @@ const ArticleData = {
     bibliography: [
         {
             id: 1,
-            title: "2017. GDC Vault. (2017). https://www.gdcvault.com/ "
+            title: "2017. GDC Vault. (2017). [https://www.gdcvault.com/](https://www.gdcvault.com/) ",
         },
         {
             id: 2,
-            title: "Espen Aarseth. 2001. Computer Game Studies, Year One. http://gamestudies.org/0101/editorial.html. Game Studies 1, 1 (July 2001). "
+            title: "Espen Aarseth. 2001. Computer Game Studies, Year One. [http://gamestudies.org/0101/editorial.html](http://gamestudies.org/0101/editorial.html). Game Studies 1, 1 (July 2001). "
         },
         {
             id: 3,
-            title: "Pippin Barr. 2016-2017. ‘It is As If You Were Doing Work’ Process Diary. (2016-2017). https://github.com/pippinbarr/itisasifyouweredoingwork/tree/master/process/README.md"
+            title: "Pippin Barr. 2016-2017. ‘It is As If You Were Doing Work’ Process Diary. (2016-2017). [https://github.com/pippinbarr/itisasifyouweredoingwork/tree/master/process/README.md](https://github.com/pippinbarr/itisasifyouweredoingwork/tree/master/process/README.md)"
         },
         {
             id: 4,
-            title: "Pippin Barr. 2017. It is As If You Were Doing Work. (2017). https://pippinbarr.github.io/itisasifyouweredoingwork/ "
+            title: "Pippin Barr. 2017. It is As If You Were Doing Work. (2017). [https://pippinbarr.github.io/itisasifyouweredoingwork/](https://pippinbarr.github.io/itisasifyouweredoingwork/) "
         },
         {
             id: 5,
-            title: "Pippin Barr. 2017. ‘It is As If You Were Doing Work’ commit c0a887d890ffd2a0b2b2dbc34aa1a214f9d3b3e4. (2017). https://github.com/pippinbarr/itisasifyouweredoingwork/commit/ c0a887d890ffd2a0b2b2dbc34aa1a214f9d3b3e4 "
+            title: "Pippin Barr. 2017. ‘It is As If You Were Doing Work’ [Commit c0a887d89](https://github.com/pippinbarr/itisasifyouweredoingwork/commit/c0a887d890ffd2a0b2b2dbc34aa1a214f9d3b3e4) (2017)."
         },
         {
             id: 6,
-            title: "Pippin Barr. 2017. ‘It is as if you were doing work’ data.js file. (2017). https: //github.com/pippinbarr/itisasifyouweredoingwork/blob/master/js/data.js "
+            title: "Pippin Barr. 2017. ‘It is as if you were doing work’ data.js file. (2017). [https://github.com/pippinbarr/itisasifyouweredoingwork/blob/master/js/data.js](https://github.com/pippinbarr/itisasifyouweredoingwork/blob/master/js/data.js)"
         },
         {
             id: 7,
-            title: "Pippin Barr. 2017. ‘It is As If You Were Doing Work’ GitHub Repository. (2017). https://github.com/pippinbarr/itisasifyouweredoingwork "
+            title: "Pippin Barr. 2017. ‘It is As If You Were Doing Work’ GitHub Repository. (2017). [https://github.com/pippinbarr/itisasifyouweredoingwork](https://github.com/pippinbarr/itisasifyouweredoingwork) "
         },
         {
             id: 8,
-            title: "Pippin Barr. 2017. ‘It is as if you were doing work’ screenshot of UI with alien text. (2017). https://github.com/pippinbarr/itisasifyouweredoingwork/commit/ 51b5f5d883f146b8d232f706e4cac802b33a6783 "
+            title: "Pippin Barr. 2017. ‘It is as if you were doing work’ screenshot of UI with alien text. (2017). [Commit 51b5f5d88](https://github.com/pippinbarr/itisasifyouweredoingwork/commit/51b5f5d883f146b8d232f706e4cac802b33a6783)"
         },
         {
             id: 9,
-            title: "Pippin Barr. 2017. ‘It is as if you were doing work’ screenshot of UI with placeholder text. (2017). https://github.com/pippinbarr/itisasifyouweredoingwork/blob/ master/process/images/Screen%20Shot%202017- 01- 05%20at%2012.03.57.png "
+            title: "Pippin Barr. 2017. ‘It is as if you were doing work’ screenshot of UI with placeholder text. (2017). [https://github.com/pippinbarr/itisasifyouweredoingwork/blob/master/process/images/Screen%20Shot%202017-01-05%20at%2012.03.57.png](https://github.com/pippinbarr/itisasifyouweredoingwork/blob/master/process/images/Screen%20Shot%202017-01-05%20at%2012.03.57.png) "
         },
         {
             id: 10,
-            title: "Pippin Barr. 2017. Press Kit for ‘It Is As If You Were Doing Work’. (2017). https://github.com/pippinbarr/itisasifyouweredoingwork/tree/master/ press/README.md "
+            title: "Pippin Barr. 2017. Press Kit for ‘It Is As If You Were Doing Work’. (2017). [https://github.com/pippinbarr/itisasifyouweredoingwork/tree/master/press/README.md](https://github.com/pippinbarr/itisasifyouweredoingwork/tree/master/press/README.md) "
         },
         {
             id: 11,
-            title: "Rob Beschizza. 2017. It Is As If You Were Doing Work is a browser game celebrating Windows 3-era cubicle drudgery. (2017). https://boingboing.net/2017/07/04/it-is-as-if-you-were-doing-wor.html "
+            title: "Rob Beschizza. 2017. It Is As If You Were Doing Work is a browser game celebrating Windows 3-era cubicle drudgery. (2017). [https://boingboing.net/2017/07/04/it-is-as-if-you-were-doing-wor.html](https://boingboing.net/2017/07/04/it-is-as-if-you-were-doing-wor.html)"
         },
         {
             id: 12,
-            title: "John Biggs. 2017. New game simulates the old grind. (2017). https://techcrunch.com/2017/07/06/new-game-simulates-the-old-grind/ "
+            title: "John Biggs. 2017. New game simulates the old grind. (2017). [https://techcrunch.com/2017/07/06/new-game-simulates-the-old-grind/](https://techcrunch.com/2017/07/06/new-game-simulates-the-old-grind/) "
         },
         {
             id: 13,
@@ -219,7 +219,7 @@ const ArticleData = {
         },
         {
             id: 14,
-            title: "Mark Blythe, Jamie Steane, Jenny Roe, and Caroline Oliver. 2015. Solutionism, the Game: Design Fictions for Positive Aging. In Proceedings of the 33rd Annual ACM Conference on Human Factors in Computing Systems (CHI ’15). ACM, New York, NY, USA, 3849–3858. https://doi.org/10.1145/2702123.2702491 "
+            title: "Mark Blythe, Jamie Steane, Jenny Roe, and Caroline Oliver. 2015. Solutionism, the Game: Design Fictions for Positive Aging. In Proceedings of the 33rd Annual ACM Conference on Human Factors in Computing Systems (CHI ’15). ACM, New York, NY, USA, 3849–3858. [https://doi.org/10.1145/2702123.2702491](https://doi.org/10.1145/2702123.2702491) "
         },
         {
             id: 15,
@@ -227,35 +227,35 @@ const ArticleData = {
         },
         {
             id: 16,
-            title: "Julia Ayumi Bopp, Elisa D. Mekler, and Klaus Opwis. 2016. Negative Emotion, Positive Experience?: Emotionally Moving Moments in Digital Games. In Proceedings of the 2016 CHI Conference on Human Factors in Computing Systems (CHI ’16). ACM, New York, NY, USA, 2996–3006. https://doi.org/10.1145/2858036.2858227 "
+            title: "Julia Ayumi Bopp, Elisa D. Mekler, and Klaus Opwis. 2016. Negative Emotion, Positive Experience?: Emotionally Moving Moments in Digital Games. In Proceedings of the 2016 CHI Conference on Human Factors in Computing Systems (CHI ’16). ACM, New York, NY, USA, 2996–3006. [https://doi.org/10.1145/2858036.2858227](https://doi.org/10.1145/2858036.2858227) "
         },
         {
             id: 17,
-            title: "John Bowers. 2012. The Logic of Annotated Portfolios: Communicating the Value of ’Research Through Design’. In Proceedings of the Designing Interactive Systems Conference (DIS ’12). ACM, New York, NY, USA, 68–77. https://doi.org/10.1145/2317956.2317968 "
+            title: "John Bowers. 2012. The Logic of Annotated Portfolios: Communicating the Value of ’Research Through Design’. In Proceedings of the Designing Interactive Systems Conference (DIS ’12). ACM, New York, NY, USA, 68–77. [https://doi.org/10.1145/2317956.2317968](https://doi.org/10.1145/2317956.2317968) "
         },
         {
             id: 18,
-            title: "Richard Buchanan. 1985. Declaration by Design: Rhetoric, Argument, and Demonstration in Design Practice. Design Issues 2, 1 (1985), 4–22. https://doi.org/10.2307/1511524 "
+            title: "Richard Buchanan. 1985. Declaration by Design: Rhetoric, Argument, and Demonstration in Design Practice. Design Issues 2, 1 (1985), 4–22. [https://doi.org/10.2307/1511524](https://doi.org/10.2307/1511524) "
         },
         {
             id: 19,
-            title: "Marion Buchenau and Jane Fulton Suri. 2000. Experience Prototyping. In Proceedings of the 3rd Conference on Designing Interactive Systems: Processes, Practices, Methods, and Techniques (DIS ’00). ACM, New York, NY, USA, 424433. https://doi.org/10.1145/347642.347802 "
+            title: "Marion Buchenau and Jane Fulton Suri. 2000. Experience Prototyping. In Proceedings of the 3rd Conference on Designing Interactive Systems: Processes, Practices, Methods, and Techniques (DIS ’00). ACM, New York, NY, USA, 424433. [https://doi.org/10.1145/347642.347802](https://doi.org/10.1145/347642.347802) "
         },
         {
             id: 20,
-            title: "John M. Carroll and John M. Thomas. 1988. FUN. SIGCHI Bull. 19 (January 1988), 21–24. Issue 3. https://doi.org/10.1145/49108.1045604 "
+            title: "John M. Carroll and John M. Thomas. 1988. FUN. SIGCHI Bull. 19 (January 1988), 21–24. Issue 3. [https://doi.org/10.1145/49108.1045604](https://doi.org/10.1145/49108.1045604) "
         },
         {
             id: 21,
-            title: "Dennis Chao. 2001. Doom As an Interface for Process Management. In Proceedings of the SIGCHI Conference on Human Factors in Computing Systems (CHI ’01). ACM, New York, NY, USA, 152–157. https://doi.org/10.1145/365024.365078 "
+            title: "Dennis Chao. 2001. Doom As an Interface for Process Management. In Proceedings of the SIGCHI Conference on Human Factors in Computing Systems (CHI ’01). ACM, New York, NY, USA, 152–157. [https://doi.org/10.1145/365024.365078](https://doi.org/10.1145/365024.365078) "
         },
         {
             id: 22,
-            title: "Lucas Colusso, Gary Hsieh, and Sean A. Munson. 2016. Designing Closeness to Increase Gamers’ Performance. In Proceedings of the 2016 CHI Conference on Human Factors in Computing Systems (CHI ’16). ACM, New York, NY, USA, 3020–3024. https://doi.org/10.1145/2858036.2858206 "
+            title: "Lucas Colusso, Gary Hsieh, and Sean A. Munson. 2016. Designing Closeness to Increase Gamers’ Performance. In Proceedings of the 2016 CHI Conference on Human Factors in Computing Systems (CHI ’16). ACM, New York, NY, USA, 3020–3024. [https://doi.org/10.1145/2858036.2858206](https://doi.org/10.1145/2858036.2858206) "
         },
         {
             id: 23,
-            title: "Patricia Ivette Cornelio Martinez, Silvana De Pirro, Chi Thanh Vi, and Sriram Subramanian. 2017. Agency in Mid-air Interfaces. In Proceedings of the 2017 CHI Conference on Human Factors in Computing Systems (CHI ’17). ACM, New York, NY, USA, 2426–2439. https://doi.org/10.1145/3025453.3025457 "
+            title: "Patricia Ivette Cornelio Martinez, Silvana De Pirro, Chi Thanh Vi, and Sriram Subramanian. 2017. Agency in Mid-air Interfaces. In Proceedings of the 2017 CHI Conference on Human Factors in Computing Systems (CHI ’17). ACM, New York, NY, USA, 2426–2439. [https://doi.org/10.1145/3025453.3025457](https://doi.org/10.1145/3025453.3025457) "
         },
         {
             id: 24,
@@ -263,31 +263,31 @@ const ArticleData = {
         },
         {
             id: 25,
-            title: "Peter Dalsgaard. 2010. Research in and Through Design: An Interaction Design Research Approach. In Proceedings of the 22Nd Conference of the ComputerHuman Interaction Special Interest Group of Australia on Computer-Human Interaction (OZCHI ’10). ACM, New York, NY, USA, 200–203. https://doi.org/10.1145/1952222.1952265 "
+            title: "Peter Dalsgaard. 2010. Research in and Through Design: An Interaction Design Research Approach. In Proceedings of the 22Nd Conference of the ComputerHuman Interaction Special Interest Group of Australia on Computer-Human Interaction (OZCHI ’10). ACM, New York, NY, USA, 200–203. [https://doi.org/10.1145/1952222.1952265](https://doi.org/10.1145/1952222.1952265) "
         },
         {
             id: 26,
-            title: "Peter Dalsgaard and Kim Halskov. 2012. Reflective Design Documentation. In Proceedings of the Designing Interactive Systems Conference (DIS ’12). ACM, New York, NY, USA, 428–437. https://doi.org/10.1145/2317956.2318020 "
+            title: "Peter Dalsgaard and Kim Halskov. 2012. Reflective Design Documentation. In Proceedings of the Designing Interactive Systems Conference (DIS ’12). ACM, New York, NY, USA, 428–437. [https://doi.org/10.1145/2317956.2318020](https://doi.org/10.1145/2317956.2318020) "
         },
         {
             id: 27,
-            title: "Heather Desurvire, Martin Caplan, and Jozsef A. Toth. 2004. Using Heuristics to Evaluate the Playability of Games. In CHI ’04 Extended Abstracts on Human Factors in Computing Systems (CHI EA ’04). ACM, New York, NY, USA, 15091512. https://doi.org/10.1145/985921.986102"
+            title: "Heather Desurvire, Martin Caplan, and Jozsef A. Toth. 2004. Using Heuristics to Evaluate the Playability of Games. In CHI ’04 Extended Abstracts on Human Factors in Computing Systems (CHI EA ’04). ACM, New York, NY, USA, 15091512. [https://doi.org/10.1145/985921.986102](https://doi.org/10.1145/985921.986102)"
         },
         {
             id: 28,
-            title: "Sebastian Deterding. 2017. The Pyrrhic Victory of Game Studies. Games and Culture 12, 6 (2017), 521–543. https://doi.org/10.1177/1555412016665067 "
+            title: "Sebastian Deterding. 2017. The Pyrrhic Victory of Game Studies. Games and Culture 12, 6 (2017), 521–543. [https://doi.org/10.1177/1555412016665067](https://doi.org/10.1177/1555412016665067) "
         },
         {
             id: 29,
-            title: "Steven P. Dow, Kate Heddleston, and Scott R. Klemmer. 2009. The Efficacy of Prototyping Under Time Constraints. In Proceedings of the Seventh ACM Conference on Creativity and Cognition (C&#38;C ’09). ACM, New York, NY, USA, 165–174. https://doi.org/10.1145/1640233.1640260 "
+            title: "Steven P. Dow, Kate Heddleston, and Scott R. Klemmer. 2009. The Efficacy of Prototyping Under Time Constraints. In Proceedings of the Seventh ACM Conference on Creativity and Cognition (C&#38;C ’09). ACM, New York, NY, USA, 165–174. [https://doi.org/10.1145/1640233.1640260](https://doi.org/10.1145/1640233.1640260) "
         },
         {
             id: 30,
-            title: "Markku Eskelinen. 2001. The Gaming Situation. http://www.gamestudies.org/0101/eskelinen/. Game Studies 1, 1 (July 2001). "
+            title: "Markku Eskelinen. 2001. The Gaming Situation. [http://www.gamestudies.org/0101/eskelinen/](http://www.gamestudies.org/0101/eskelinen/). Game Studies 1, 1 (July 2001). "
         },
         {
             id: 31,
-            title: "Daniel Fallman. 2007. Why Research-Oriented Design Isn’t Design-Oriented Research: On the Tensions Between Design and Research in an Implicit Design Discipline. Knowledge, Technology & Policy 20, 3 (01 Oct 2007), 193–200. https://doi.org/10.1007/s12130-007-9022-8 "
+            title: "Daniel Fallman. 2007. Why Research-Oriented Design Isn’t Design-Oriented Research: On the Tensions Between Design and Research in an Implicit Design Discipline. Knowledge, Technology & Policy 20, 3 (01 Oct 2007), 193–200. [https://doi.org/10.1007/s12130-007-9022-8](https://doi.org/10.1007/s12130-007-9022-8) "
         },
         {
             id: 32,
@@ -303,7 +303,7 @@ const ArticleData = {
         },
         {
             id: 35,
-            title: "Wei Gai, Chenglei Yang, Yulong Bian, Chia Shen, Xiangxu Meng, Lu Wang, Juan Liu, Mingda Dong, Chengjie Niu, and Cheng Lin. 2017. Supporting Easy Physicalto-Virtual Creation of Mobile VR Maze Games: A New Genre. In Proceedings of the 2017 CHI Conference on Human Factors in Computing Systems (CHI ’17). ACM, New York, NY, USA, 5016–5028. https://doi.org/10.1145/3025453.3025494 "
+            title: "Wei Gai, Chenglei Yang, Yulong Bian, Chia Shen, Xiangxu Meng, Lu Wang, Juan Liu, Mingda Dong, Chengjie Niu, and Cheng Lin. 2017. Supporting Easy Physicalto-Virtual Creation of Mobile VR Maze Games: A New Genre. In Proceedings of the 2017 CHI Conference on Human Factors in Computing Systems (CHI ’17). ACM, New York, NY, USA, 5016–5028. [https://doi.org/10.1145/3025453.3025494](https://doi.org/10.1145/3025453.3025494) "
         },
         {
             id: 36,
@@ -311,7 +311,7 @@ const ArticleData = {
         },
         {
             id: 37,
-            title: "William Gaver. 2011. Making Spaces: How Design Workbooks Work. In Proceedings of the SIGCHI Conference on Human Factors in Computing Systems (CHI ’11). ACM, New York, NY, USA, 1551–1560. https://doi.org/10.1145/1978942.1979169 "
+            title: "William Gaver. 2011. Making Spaces: How Design Workbooks Work. In Proceedings of the SIGCHI Conference on Human Factors in Computing Systems (CHI ’11). ACM, New York, NY, USA, 1551–1560. [https://doi.org/10.1145/1978942.1979169](https://doi.org/10.1145/1978942.1979169) "
         },
         {
             id: 38,
@@ -335,19 +335,19 @@ const ArticleData = {
         },
         {
             id: 43,
-            title: "Mallory Ketcheson, Luke Walker, and T.C. Nicholas Graham. 2016. Thighrim and Calf-Life: A Study of the Conversion of Off-the-Shelf Video Games into Exergames. In Proceedings of the 2016 CHI Conference on Human Factors in Computing Systems (CHI ’16). ACM, New York, NY, USA, 2681–2692. https://doi.org/10.1145/2858036.2858406 "
+            title: "Mallory Ketcheson, Luke Walker, and T.C. Nicholas Graham. 2016. Thighrim and Calf-Life: A Study of the Conversion of Off-the-Shelf Video Games into Exergames. In Proceedings of the 2016 CHI Conference on Human Factors in Computing Systems (CHI ’16). ACM, New York, NY, USA, 2681–2692. [https://doi.org/10.1145/2858036.2858406](https://doi.org/10.1145/2858036.2858406) "
         },
         {
             id: 44,
-            title: "Rilla Khaled and Gordon Ingram. 2012. Tales from the front lines of a largescale serious game project. In Proceedings of CHI 2012. ACM Press, 69–78. https://doi.org/10.1145/2207676.2207688 "
+            title: "Rilla Khaled and Gordon Ingram. 2012. Tales from the front lines of a largescale serious game project. In Proceedings of CHI 2012. ACM Press, 69–78. [https://doi.org/10.1145/2207676.2207688](https://doi.org/10.1145/2207676.2207688) "
         },
         {
             id: 45,
-            title: "Annakaisa Kultima. 2015. Game Design Research. In Proceedings of the 19th International Academic Mindtrek Conference (AcademicMindTrek ’15). ACM, New York, NY, USA, 18–25. https://doi.org/10.1145/2818187.2818300 "
+            title: "Annakaisa Kultima. 2015. Game Design Research. In Proceedings of the 19th International Academic Mindtrek Conference (AcademicMindTrek ’15). ACM, New York, NY, USA, 18–25. [https://doi.org/10.1145/2818187.2818300](https://doi.org/10.1145/2818187.2818300) "
         },
         {
             id: 46,
-            title: "Youn-Kyung Lim, Erik Stolterman, and Josh Tenenberg. 2008. The anatomy of prototypes: Prototypes as filters, prototypes as manifestations of design ideas. ACM Trans. Comput.-Hum. Interact. 15, Article 7 (July 2008), 27 pages. Issue 2. https://doi.org/10.1145/1375761.1375762 "
+            title: "Youn-Kyung Lim, Erik Stolterman, and Josh Tenenberg. 2008. The anatomy of prototypes: Prototypes as filters, prototypes as manifestations of design ideas. ACM Trans. Comput.-Hum. Interact. 15, Article 7 (July 2008), 27 pages. Issue 2. [https://doi.org/10.1145/1375761.1375762](https://doi.org/10.1145/1375761.1375762) "
         },
         {
             id: 47,
@@ -355,14 +355,15 @@ const ArticleData = {
         },
         {
             id: 48,
-            title: "Joe Marshall, Conor Linehan, and Adrian Hazzard. 2016. Designing Brutal Multiplayer Video Games. In Proceedings of the 2016 CHI Conference on Human Factors in Computing Systems (CHI ’16). ACM, New York, NY, USA, 2669–2680. https://doi.org/10.1145/2858036.2858080",
-            // {
+            title: "Joe Marshall, Conor Linehan, and Adrian Hazzard. 2016. Designing Brutal Multiplayer Video Games. In Proceedings of the 2016 CHI Conference on Human Factors in Computing Systems (CHI ’16). ACM, New York, NY, USA, 2669–2680. [https://doi.org/10.1145/2858036.2858080](https://doi.org/10.1145/2858036.2858080)"
+        },
+        {
             id: 49,
             title: "Jean McNiff. 2013. Action Research: Principles and Practice. Routledge. "
         },
         {
             id: 50,
-            title: "Florian Mueller and Katherine Isbister. 2014. Movement-based Game Guidelines. In Proceedings of the 32Nd Annual ACM Conference on Human Factors in Computing Systems (CHI ’14). ACM, New York, NY, USA, 2191–2200. https://doi.org/10.1145/2556288.2557163 "
+            title: "Florian Mueller and Katherine Isbister. 2014. Movement-based Game Guidelines. In Proceedings of the 32Nd Annual ACM Conference on Human Factors in Computing Systems (CHI ’14). ACM, New York, NY, USA, 2191–2200. [https://doi.org/10.1145/2556288.2557163](https://doi.org/10.1145/2556288.2557163) "
         },
         {
             id: 51,
@@ -378,15 +379,15 @@ const ArticleData = {
         },
         {
             id: 54,
-            title: "James Pierce. 2014. On the Presentation and Production of Design Research Artifacts in HCI. In Proceedings of the 2014 Conference on Designing Interactive Systems (DIS ’14). ACM, New York, NY, USA, 735–744. https://doi.org/10. 1145/2598510.2598525 "
+            title: "James Pierce. 2014. On the Presentation and Production of Design Research Artifacts in HCI. In Proceedings of the 2014 Conference on Designing Interactive Systems (DIS ’14). ACM, New York, NY, USA, 735–744. [https://doi.org/10.1145/2598510.2598525](https://doi.org/10.1145/2598510.2598525) "
         },
         {
             id: 55,
-            title: "Matt Ratto. 2011. Critical Making: Conceptual and Material Studies in Technology and Social Life. The Information Society 27, 4 (2011), 252–260. https://doi.org/10.1080/01972243.2011.583819 "
+            title: "Matt Ratto. 2011. Critical Making: Conceptual and Material Studies in Technology and Social Life. The Information Society 27, 4 (2011), 252–260. [https://doi.org/10.1080/01972243.2011.583819](https://doi.org/10.1080/01972243.2011.583819)"
         },
         {
             id: 56,
-            title: "Tom Regan. 2017. Recreate the thrills of ’90s PC admin in this browser game. (2017). https://www.engadget.com/2017/07/06/recreate-the-thrills-of-90s-pc-admin-in-this-browser-game/ "
+            title: "Tom Regan. 2017. Recreate the thrills of ’90s PC admin in this browser game. (2017). [https://www.engadget.com/2017/07/06/recreate-the-thrills-of-90s-pc-admin-in-this-browser-game/](https://www.engadget.com/2017/07/06/recreate-the-thrills-of-90s-pc-admin-in-this-browser-game/) "
         },
         {
             id: 57,
@@ -398,7 +399,7 @@ const ArticleData = {
         },
         {
             id: 59,
-            title: "Ben Shneiderman. 2004. Designing for Fun: How Can We Design User Interfaces to Be More Fun? interactions 11, 5 (Sept. 2004), 48–50. https://doi.org/10.1145/1015530.1015552 "
+            title: "Ben Shneiderman. 2004. Designing for Fun: How Can We Design User Interfaces to Be More Fun? interactions 11, 5 (Sept. 2004), 48–50. [https://doi.org/10.1145/1015530.1015552](https://doi.org/10.1145/1015530.1015552) "
         },
         {
             id: 60,
@@ -414,11 +415,11 @@ const ArticleData = {
         },
         {
             id: 63,
-            title: "James Vincent. 2017. Relive the Windows 95 glory days with this work simulation game. (July 2017). https://www.theverge.com/tldr/2017/7/6/15927338/work-simulation-game-windows-95-pippin-barr "
+            title: "James Vincent. 2017. Relive the Windows 95 glory days with this work simulation game. (July 2017). [https://www.theverge.com/tldr/2017/7/6/15927338/work-simulation-game-windows-95-pippin-barr](https://www.theverge.com/tldr/2017/7/6/15927338/work-simulation-game-windows-95-pippin-barr) "
         },
         {
             id: 64,
-            title: "Sebastien Wesolowski. 2017. “It is as if you were doing work”, un simulateur de travail pour un monde postemploi. (2017). https://motherboard.vice.com/fr/article/8xaq4a/it-is-as-if-you-were-doing-work-un-simulateur-de-travail-pour-un-monde-post-emploi "
+            title: "Sebastien Wesolowski. 2017. “It is as if you were doing work”, un simulateur de travail pour un monde postemploi. (2017). [https://motherboard.vice.com/fr/article/8xaq4a/it-is-as-if-you-were-doing-work-un-simulateur-de-travail-pour-un-monde-post-emploi](https://motherboard.vice.com/fr/article/8xaq4a/it-is-as-if-you-were-doing-work-un-simulateur-de-travail-pour-un-monde-post-emploi)"
         },
         {
             id: 65,
@@ -430,11 +431,11 @@ const ArticleData = {
         },
         {
             id: 67,
-            title: "Zhao Zhao, Ali Arya, Anthony Whitehead, Gerry Chan, and S. Ali Etemad. 2017. Keeping Users Engaged Through Feature Updates: A Long-Term Study of Using Wearable-Based Exergames. In Proceedings of the 2017 CHI Conference on Human Factors in Computing Systems (CHI ’17). ACM, New York, NY, USA, 1053–1064. https://doi.org/10.1145/3025453.3025982 "
+            title: "Zhao Zhao, Ali Arya, Anthony Whitehead, Gerry Chan, and S. Ali Etemad. 2017. Keeping Users Engaged Through Feature Updates: A Long-Term Study of Using Wearable-Based Exergames. In Proceedings of the 2017 CHI Conference on Human Factors in Computing Systems (CHI ’17). ACM, New York, NY, USA, 1053–1064. [https://doi.org/10.1145/3025453.3025982](https://doi.org/10.1145/3025453.3025982) "
         },
         {
             id: 68,
-            title: "John Zimmerman, Jodi Forlizzi, and Shelley Evenson. 2007. Research Through Design As a Method for Interaction Design Research in HCI. In Proceedings of the SIGCHI Conference on Human Factors in Computing Systems (CHI ’07). ACM, New York, NY, USA, 493–502. https://doi.org/10.1145/1240624.1240704"
+            title: "John Zimmerman, Jodi Forlizzi, and Shelley Evenson. 2007. Research Through Design As a Method for Interaction Design Research in HCI. In Proceedings of the SIGCHI Conference on Human Factors in Computing Systems (CHI ’07). ACM, New York, NY, USA, 493–502. [https://doi.org/10.1145/1240624.1240704](https://doi.org/10.1145/1240624.1240704)"
         }
 
     ],
