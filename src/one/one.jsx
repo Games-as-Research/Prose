@@ -2,6 +2,7 @@ import Markdown from "react-markdown";
 import { ScreenContainer } from "../common";
 import PrototypeContext, { PrototypeProvider } from "./prototypeContext";
 import { useContext, useState } from "react";
+import { Slider } from "antd";
 
 const One = (props) => {
   return (
@@ -136,6 +137,7 @@ const ArticleSectionHeader = (props) => {
 };
 
 const ArticleSection = (props) => {
+  const PC = useContext(PrototypeContext);
   let para_count = 0;
 
   return (
@@ -152,7 +154,10 @@ const ArticleSection = (props) => {
               <Markdown
                 key={idx}
                 className={
-                  "text-justify text-wrap text-sm px-2 hover:font-semibold hover:text-sm hover:bg-slate-200 rounded-lg"
+                  "text-justify text-wrap text-sm px-2 rounded-lg hover:font-semibold hover:-translate-y-1  hover:text-sm hover:bg-slate-200 hover:shadow-md  " +
+                  (PC.version === 1.1
+                    ? "transition delay-50 duration-300 ease-in-out "
+                    : "")
                 }
               >
                 {item}
@@ -190,12 +195,21 @@ const ControlPanel = (props) => {
       <h1 className="text-white  font-medium text-md">
         Prototype One: Metainteractions & Metacues
       </h1>
-      <button
-        className="bg-white text-black text-sm p-1 rounded-md hover:bg-slate-400"
-        onClick={PC.SwitchFont}
-      >
-        {PC.fontFam.replace("-", " ")}
-      </button>
+      <div className="flex flex-row w-[20%] justify-between">
+        <button
+          className="bg-white text-black text-sm p-1 rounded-md hover:bg-slate-400"
+          onClick={PC.ChangeVersion}
+        >
+          Version {PC.version}
+        </button>
+
+        <button
+          className="bg-white text-black text-sm p-1 rounded-md hover:bg-slate-400"
+          onClick={PC.SwitchFont}
+        >
+          {PC.fontFam.replace("-", " ")}
+        </button>
+      </div>
     </div>
   );
 };

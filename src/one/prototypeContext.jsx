@@ -7,6 +7,7 @@ export const PrototypeProvider = (props) => {
   const [showAbstract, setShowAbstract] = useState(false);
   const [section, setSection] = useState(0);
   const [fontFam, setFontFam] = useState("font-serif");
+  const [version, setVersion] = useState(1.0);
 
   function NextSection() {
     if (section === ArticleData.sections.length) {
@@ -23,17 +24,6 @@ export const PrototypeProvider = (props) => {
       setSection(section - 1);
     }
   }
-  function FontSerif() {
-    setFontFam("font-serif");
-  }
-
-  function FontSansSerif() {
-    setFontFam("font-sans");
-  }
-
-  function FontMono() {
-    setFontFam("font-mono");
-  }
 
   function SwitchFont() {
     if (fontFam == "font-serif") {
@@ -45,21 +35,28 @@ export const PrototypeProvider = (props) => {
     }
   }
 
+  function ChangeVersion() {
+    if (version === 1.0) {
+      setVersion(1.1);
+    } else if (version === 1.1) {
+      setVersion(1.0);
+    }
+  }
+
   return (
     <PrototypeContext.Provider
       value={{
         ArticleData,
         fontFam,
+        version,
 
         showAbstract,
         section,
         setShowAbstract,
         NextSection,
         PreviousSection,
-        FontMono,
-        FontSansSerif,
-        FontSerif,
         SwitchFont,
+        ChangeVersion,
       }}
     >
       {props.children}
