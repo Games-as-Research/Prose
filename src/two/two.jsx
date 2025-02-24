@@ -159,12 +159,7 @@ const ArticleSection = (props) => {
               ) : null}
               <Markdown
                 key={idx}
-                className={
-                  "text-justify text-wrap text-sm px-2 rounded-lg hover:font-semibold hover:-translate-y-1 hover:text-sm hover:bg-slate-200 hover:shadow-md  " +
-                  (PC.version === 1.1
-                    ? "transition delay-50 duration-300 ease-in-out "
-                    : "")
-                }
+                className="text-justify text-wrap text-sm px-2 rounded-lg hover:font-semibold hover:-translate-y-1 hover:text-sm hover:bg-slate-200 hover:shadow-md  transition delay-50 duration-300 ease-in-out"
               >
                 {item}
               </Markdown>

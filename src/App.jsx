@@ -8,7 +8,7 @@ export const data = [
     id: "item-1",
     name: "Prototype Zero",
     description:
-      "Prototype Zero deals with the erasure of the reader-article boundary. This incorporates the bare minimum form of the academic article that needs to be present. A section must scroll vertically -- it is continuous. Changes between sections are horizontal -- they are distinct and perhaps almost like pagination. Abstracts are not needed throughout the essay so they are conditionally present -- hover over the title to view the abstract. ",
+      "Prototype Zero deals with the erasure of the reader-article boundary. This incorporates the bare minimum form of the academic article that needs to be present. This demonstrates how the article needs to be fluid and take up the form of the digital device. The existence of this form, especially on the web allows the user to configure how-many ever views they want without having to worry about the right size -- the size of the window *is* the size of the page.",
     actionText: "Try Prototype",
     route: "/zero",
   },
@@ -16,7 +16,7 @@ export const data = [
     id: "item-2",
     name: "Prototype One",
     description:
-      "Prototype One enhances the interface with meta-interactions and meta-cues. This is meant to demonstrate the importance of these seemingly invisible responses that the system sends to the users.",
+      "Prototype One enhances the interface with meta-interactions and meta-cues. This is meant to demonstrate the importance of these seemingly invisible responses that the system sends to the users. Continuity is represented by smooth scrolling, and a shift is demonstrated by a jump so sections switch horizontally but continue vertically. Hovering on a paragraph foregrounds it and guides the attention to focus on the article. There are markers that situate the reader linearly in a text: The constant presence of the heading and paragraph numbers are metacues for orientation. ",
     actionText: "Try Prototype",
     route: "/one",
   },
