@@ -1,4 +1,4 @@
-import { createContext, useState } from "react";
+import { createContext, useEffect, useState } from "react";
 import ArticleData from "../assets/ArticleData";
 
 const PrototypeContext = createContext();
@@ -9,6 +9,20 @@ export const PrototypeProvider = (props) => {
   const [fontFam, setFontFam] = useState("font-serif");
   const [version, setVersion] = useState(1.0);
   const [horizontalMargins, setHorizontalMargins] = useState(4);
+
+  const [writing, setWriting] = useState("Write and Reflect here!");
+
+  useEffect(() => {
+    if (writing === null) {
+      setWriting(localStorage.getItem("PROSE-WRITING-HISTORY"));
+    }
+  });
+
+  useEffect(() => {
+    if (writing || writing === "") {
+      localStorage.setItem("PROSE-WRITING-HISTORY", writing);
+    }
+  }, [writing]);
 
   function NextSection() {
     if (section === ArticleData.sections.length) {
@@ -51,9 +65,11 @@ export const PrototypeProvider = (props) => {
         fontFam,
         version,
         horizontalMargins,
+        writing,
 
         showAbstract,
         section,
+        setWriting,
         setHorizontalMargins,
         setShowAbstract,
         NextSection,

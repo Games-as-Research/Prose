@@ -34,7 +34,7 @@ const Article = (props) => {
       />
 
       <ArticleSectionHeader />
-
+      <WritingArea />
       {PC.section == PC.ArticleData.sections.length ? (
         <TheBibliography />
       ) : (
@@ -45,6 +45,21 @@ const Article = (props) => {
         </div>
       )}
     </div>
+  );
+};
+
+const WritingArea = (props) => {
+  const PC = useContext(PrototypeContext);
+  return (
+    <textarea
+      spellCheck="false"
+      className="write mx-4 my-1 rounded-md p-1 text-sm border-b-2"
+      value={PC.writing ?? ""}
+      rows={PC.writing ? PC.writing.split("\n").length + 1 : 0}
+      onChange={(e) => {
+        PC.setWriting(e.target.value);
+      }}
+    />
   );
 };
 
@@ -146,6 +161,7 @@ const ArticleSection = (props) => {
         {props.content?.map((item, idx) => {
           return (
             <div
+              key={idx}
               className={"flex flex-row py-2"}
               style={{
                 marginLeft: PC.horizontalMargins,
@@ -157,10 +173,7 @@ const ArticleSection = (props) => {
                   {++para_count}
                 </p>
               ) : null}
-              <Markdown
-                key={idx}
-                className="text-justify text-wrap text-sm px-2 rounded-lg hover:font-semibold hover:-translate-y-1 hover:text-sm hover:bg-slate-200 hover:shadow-md  transition delay-50 duration-300 ease-in-out"
-              >
+              <Markdown className="text-justify text-wrap text-sm px-2 rounded-lg hover:font-semibold hover:-translate-y-1 hover:text-sm hover:bg-slate-200 hover:shadow-md  transition delay-50 duration-300 ease-in-out">
                 {item}
               </Markdown>
             </div>
