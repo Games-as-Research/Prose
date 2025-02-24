@@ -8,6 +8,8 @@ const ArticleData = {
     ],
     abstract: "Recent years have borne witness to an explosion of games research from diverse home disciplines. Much of this work concerns game design, but the games research community has yet to agree on practices and methods for examining game design that are simultaneously rigorously scholarly, flexible enough to accommodate a design-oriented perspective, and sufficiently knowledgeable of computation to engage with the materiality of games. In this paper, we outline such an approach. We focus on the question of an appropriate method for an academic game design research practice that is grounded in making and play while respecting recoverability and context. We demonstrate what game analysis based on such a method can reveal, drawing on the case of Pippin Barr’s *It is as if you were doing work*, and show how method and analysis in tandem can materialise tacit design knowledge, support balanced subjectivity, and illuminate the often abstract design problem space.",
     keywords: ["game design research", "game design", "design research", "design methods", "prototyping"],
+    citation: "Rilla Khaled, Jonathan Lessard, and Pippin Barr. 2018. Documenting Trajectories in Design Space: a Methodology for Applied Game Design Research: Full Paper. In FDG18: *Foundations of Digital Games* 2018, August 7–10, 2018, Malmö, Sweden. ACM, New York, NY, USA, Article 4, 10 pages. https://doi.org/10.1145/3235765.3235767",
+
     sections: [
         {
             title: "Introduction",
