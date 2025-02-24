@@ -10,18 +10,12 @@ export const PrototypeProvider = (props) => {
   const [version, setVersion] = useState(1.0);
   const [horizontalMargins, setHorizontalMargins] = useState(4);
 
-  const [writing, setWriting] = useState("Write and Reflect here!");
+  const [writing, setWriting] = useState(
+    localStorage.getItem("PROSE-WRITING-HISTORY") ?? "Write and Reflect here"
+  );
 
   useEffect(() => {
-    if (writing === null) {
-      setWriting(localStorage.getItem("PROSE-WRITING-HISTORY"));
-    }
-  });
-
-  useEffect(() => {
-    if (writing || writing === "") {
-      localStorage.setItem("PROSE-WRITING-HISTORY", writing);
-    }
+    localStorage.setItem("PROSE-WRITING-HISTORY", writing);
   }, [writing]);
 
   function NextSection() {
@@ -58,6 +52,24 @@ export const PrototypeProvider = (props) => {
     }
   }
 
+  function AddSectionMarkToNotes(para) {
+    if (para) {
+      if (section === ArticleData.sections.length) {
+        // Referencing Bibliography
+        setWriting(writing + "\n\n[" + para.toString() + "]:");
+      } else {
+          setWriting(
+            writing +
+              "\n\nSection " +
+              (section + 1).toString() +
+              " Paragraph " +
+              para.toString() +
+              "\n"
+          );
+      }
+    }
+  }
+
   return (
     <PrototypeContext.Provider
       value={{
@@ -76,6 +88,7 @@ export const PrototypeProvider = (props) => {
         PreviousSection,
         SwitchFont,
         ChangeVersion,
+        AddSectionMarkToNotes,
       }}
     >
       {props.children}

@@ -32,18 +32,20 @@ const Article = (props) => {
         authors={PC.ArticleData.authors.join(", ")}
         citation={PC.ArticleData.citation}
       />
-
       <ArticleSectionHeader />
-      <WritingArea />
-      {PC.section == PC.ArticleData.sections.length ? (
-        <TheBibliography />
-      ) : (
-        <div className="flex overflow-y-hidden">
-          <ArticleSection
-            content={PC.ArticleData.sections[PC.section].paragraphs}
-          />
-        </div>
-      )}
+
+      <div className="flex overflow-y-hidden flex-row justify-between">
+        {PC.section == PC.ArticleData.sections.length ? (
+          <TheBibliography />
+        ) : (
+          <div className="flex ">
+            <ArticleSection
+              content={PC.ArticleData.sections[PC.section].paragraphs}
+            />
+          </div>
+        )}
+        <WritingArea />
+      </div>
     </div>
   );
 };
@@ -52,8 +54,8 @@ const WritingArea = (props) => {
   const PC = useContext(PrototypeContext);
   return (
     <textarea
-      spellCheck="false"
-      className="write mx-4 my-1 rounded-md p-1 text-sm border-b-2"
+      spellCheck="true"
+      className="write mx-4 my-1 rounded-md p-2 text-sm w-screen bg-slate-100"
       value={PC.writing ?? ""}
       rows={PC.writing ? PC.writing.split("\n").length + 1 : 0}
       onChange={(e) => {
@@ -156,24 +158,27 @@ const ArticleSection = (props) => {
   let para_count = 0;
 
   return (
-    <div className="flex flex-col bg-slate-50 rounded-md overflow-y-scroll">
-      <div className="flex flex-col overflow-y-scroll rounded-md">
+    <div className="flex flex-col bg-slate-50 rounded-md overflow-y-scroll ">
+      <div className="flex flex-col overflow-y-scroll rounded-md w-[70vw]">
         {props.content?.map((item, idx) => {
           return (
             <div
               key={idx}
               className={"flex flex-row py-2"}
               style={{
-                marginLeft: PC.horizontalMargins,
-                marginRight: PC.horizontalMargins,
+                paddingRight: PC.horizontalMargins,
+                paddingLeft: PC.horizontalMargins,
+              }}
+              onDoubleClick={() => {
+                PC.AddSectionMarkToNotes(idx + 1);
               }}
             >
               {item?.slice(0, 2) !== "##" ? (
-                <p className="self-center text-xs font-light text-slate-400 font-sans">
+                <p className="self-center text-xs font-light text-slate-400 font-sans ml-8 mr-4">
                   {++para_count}
                 </p>
               ) : null}
-              <Markdown className="text-justify text-wrap text-sm px-2 rounded-lg hover:font-semibold hover:-translate-y-1 hover:text-sm hover:bg-slate-200 hover:shadow-md  transition delay-50 duration-300 ease-in-out">
+              <Markdown className="text-justify text-wrap text-sm rounded-lg hover:font-semibold hover:-translate-y-1 hover:text-sm hover:bg-slate-200 hover:shadow-md  transition delay-50 duration-300 ease-in-out">
                 {item}
               </Markdown>
             </div>
@@ -192,9 +197,24 @@ const TheBibliography = (props) => {
       <div className="flex flex-col overflow-y-scroll bg-slate-100 rounded-md">
         {PC.ArticleData?.bibliography.map((item, idx) => {
           return (
-            <Markdown key={idx} className={"text-wrap text-sm my-2 mx-5"}>
-              {"[" + item.id + "] " + item.title}
-            </Markdown>
+            <div
+              key={idx}
+              className={"flex flex-row py-2"}
+              style={{
+                paddingRight: PC.horizontalMargins,
+                paddingLeft: PC.horizontalMargins,
+              }}
+              onDoubleClick={() => {
+                PC.AddSectionMarkToNotes(item.id);
+              }}
+            >
+              <p className="self-center text-xs font-light text-slate-400 font-sans ml-8 mr-4">
+                {"[" + item.id + "] "}
+              </p>
+              <Markdown className="text-wrap text-sm rounded-lg hover:font-semibold hover:-translate-y-1 hover:text-sm hover:bg-slate-200 hover:shadow-md  transition delay-50 duration-300 ease-in-out">
+                {item.title}
+              </Markdown>
+            </div>
           );
         })}
       </div>
@@ -214,7 +234,7 @@ const ControlPanel = (props) => {
           <Slider
             min={4}
             step={4}
-            max={300}
+            max={50}
             onChange={(val) => {
               PC.setHorizontalMargins(val);
             }}
