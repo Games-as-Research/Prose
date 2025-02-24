@@ -20,7 +20,9 @@ const Article = (props) => {
   const PC = useContext(PrototypeContext);
 
   return (
-    <div className={"flex flex-col bg-slate-50 w-full max-h-screen " + PC.fontFam}>
+    <div
+      className={"flex flex-col bg-slate-50 w-full max-h-screen " + PC.fontFam}
+    >
       <ArticleAbstract
         title={PC.ArticleData.title}
         abstract={PC.ArticleData.abstract}
@@ -135,19 +137,28 @@ const ArticleSectionHeader = (props) => {
 };
 
 const ArticleSection = (props) => {
+  let para_count = 0;
+
   return (
     <div className="flex flex-col bg-slate-50 rounded-md overflow-y-scroll">
       <div className="flex flex-col overflow-y-scroll rounded-md">
         {props.content?.map((item, idx) => {
           return (
-            <Markdown
-              key={idx}
-              className={
-                "text-justify text-wrap text-sm py-2 mx-4 px-2 hover:font-semibold hover:text-sm hover:bg-slate-200 rounded-lg"
-              }
-            >
-              {item}
-            </Markdown>
+            <div className="flex flex-row py-2 mx-4">
+              {item?.slice(0, 2) !== "##" ? (
+                <p className="self-center text-xs font-light text-slate-400 font-sans">
+                  {++para_count}
+                </p>
+              ) : null}
+              <Markdown
+                key={idx}
+                className={
+                  "text-justify text-wrap text-sm px-2 hover:font-semibold hover:text-sm hover:bg-slate-200 rounded-lg"
+                }
+              >
+                {item}
+              </Markdown>
+            </div>
           );
         })}
       </div>
@@ -163,7 +174,7 @@ const TheBibliography = (props) => {
       <div className="flex flex-col overflow-y-scroll bg-slate-100 rounded-md">
         {PC.ArticleData?.bibliography.map((item, idx) => {
           return (
-            <Markdown key={idx} className={"text-wrap text-md my-2 mx-5"}>
+            <Markdown key={idx} className={"text-wrap text-sm my-2 mx-5"}>
               {"[" + item.id + "] " + item.title}
             </Markdown>
           );
@@ -178,7 +189,7 @@ const ControlPanel = (props) => {
   return (
     <div className="bg-black text-white w-screen flex flex-row p-4 font-mono justify-between">
       <h1 className="text-white  font-medium text-md">
-        Prototype One: Metainteractions & Metacues 
+        Prototype One: Metainteractions & Metacues
       </h1>
       <button
         className="bg-white text-black text-sm p-1 rounded-md hover:bg-slate-400"
