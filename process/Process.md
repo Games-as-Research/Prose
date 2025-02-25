@@ -1,3 +1,38 @@
+
+# February 24th 2025 
+
+//Import the notes from github commits. 
+
+## 5:00 PM 
+After having developed prototype two, I am trying to use this to try and read the article. Oh my god... not to honk my own horn but FUCK This feels good. The last two months holding this form in my head and reading in PDFs has been a nightmare 
+
+Double-clicking to reference the paragraph or source in my writing space is a fucking game changer for me. Pairing these side by side + enhancement on hover. When I read this with the hover on, the inner voice in my head is different, my focus is different. When I try reading it without the hover, the periphery is requesting my access, but with the hover on it has all my attention. 
+![[Screenshot 2025-02-24 at 4.57.50 PM.png]]
+
+But be damned these interactions the biggest advantage of this is the fact that this form gives me ideas. And by me I dont me specifically but it *will* inspire these ideas in other readers too; this is the whole point of creating this - to open the design space. Case in point: I showed it to TJ and he had the same reaction, he kept recommending how else I could enhance this, refine this.
+
+I think each of these is a good illustration of how digital-first academic reading ought to be. From here-on, the ideas are adding a much smaller refinement and polish on the prototype. Which is great but a completely different direction. 
+
+The goal is to illuminate the design space. What interactions change my reading behaviours, my reading process, my reading needs. 
+
+When I translate from PDF to Web app, I make the paper fluid, the paper takes the form of the window (and at window_count = 1,  screen). Now I can open the article in whatever way I want  -- see [here](https://www.youtube.com/watch?v=LGAxxIqMZGg) 
+
+When I spread the article out, introduce foregrounding, conditional rendering, and generally some meta-interactions, I change the way someone interacts with an article. This allows me to pay attention on the sections I want to pay attention to. 
+The only thing that I think is missing is spatial navigation and hovering. This one is extremely important. I dont know if I should implement spartial navigation or if I should implement embedding things...  (nvm did it)
+
+To record: 
+1. Prototype Zero: Fluid Article 
+2. Prototype One: Meta-interactions and Meta-Cues 
+	1. Adds smoother transitions between paragraph foregroundings 
+	2. Adds visual hierarchy to Bibliography as well 
+3. Prototype Two: Writing 
+
+## 10:30 PM 
+There is a deliberate arms length that I have kept from hypertext and hyperlinking. For one, it has historically gotten a lot of attention but also two: hyperlink affords breadth-first search. There is some of that that happens but it is 
+
+Future of Academic publication:
+Once we start process
+
 # February 18th 2025 
 
 ## 11:00 AM 
