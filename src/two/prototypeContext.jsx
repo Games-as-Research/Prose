@@ -9,6 +9,7 @@ export const PrototypeProvider = (props) => {
   const [fontFam, setFontFam] = useState("font-serif");
   const [version, setVersion] = useState(2.0);
   const [horizontalMargins, setHorizontalMargins] = useState(4);
+  const [bold, setBold] = useState(true);
 
   const [writing, setWriting] = useState(
     localStorage.getItem("PROSE-WRITING-HISTORY") ?? "Write and Reflect here"
@@ -75,6 +76,10 @@ export const PrototypeProvider = (props) => {
       }
     }
   }
+  function ToggleBold() {
+    if (bold) setBold(false);
+    else setBold(true);
+  }
 
   return (
     <PrototypeContext.Provider
@@ -84,6 +89,7 @@ export const PrototypeProvider = (props) => {
         version,
         horizontalMargins,
         writing,
+        bold,
 
         showAbstract,
         section,
@@ -95,6 +101,7 @@ export const PrototypeProvider = (props) => {
         SwitchFont,
         ChangeVersion,
         AddSectionMarkToNotes,
+        ToggleBold,
       }}
     >
       {props.children}

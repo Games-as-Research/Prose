@@ -1,7 +1,7 @@
 import Markdown from "react-markdown";
 import { ScreenContainer } from "../common";
 import PrototypeContext, { PrototypeProvider } from "./prototypeContext";
-import { useContext, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import { Slider } from "antd";
 
 const Two = (props) => {
@@ -61,6 +61,7 @@ const WritingArea = (props) => {
       onChange={(e) => {
         PC.setWriting(e.target.value);
       }}
+      placeholder="Write and reflect here..."
     />
   );
 };
@@ -155,7 +156,23 @@ const ArticleSectionHeader = (props) => {
 
 const ArticleSection = (props) => {
   const PC = useContext(PrototypeContext);
+  const [stylestr, setStylestr] = useState(
+    "text-justify text-wrap text-sm rounded-lg  hover:-translate-y-1 hover:text-sm hover:bg-slate-200 hover:shadow-md transition delay-50 duration-300 ease-in-out hover:font-semibold"
+  );
   let para_count = 0;
+
+  useEffect(() => {
+    console.log("Two::Debug");
+    if (PC.bold === true) {
+      setStylestr(
+        "text-justify text-wrap text-sm rounded-lg  hover:-translate-y-1 hover:text-sm hover:bg-slate-200 hover:shadow-md transition delay-50 duration-300 ease-in-out hover:font-semibold"
+      );
+    } else {
+      setStylestr(
+        "text-justify text-wrap text-sm rounded-lg  hover:-translate-y-1 hover:text-sm hover:bg-slate-200 hover:shadow-md transition delay-50 duration-300 ease-in-out"
+      );
+    }
+  }, [PC.bold]);
 
   return (
     <div className="flex flex-col bg-slate-50 rounded-md overflow-y-scroll ">
@@ -178,9 +195,7 @@ const ArticleSection = (props) => {
                   {++para_count}
                 </p>
               ) : null}
-              <Markdown className="text-justify text-wrap text-sm rounded-lg hover:font-semibold hover:-translate-y-1 hover:text-sm hover:bg-slate-200 hover:shadow-md  transition delay-50 duration-300 ease-in-out">
-                {item}
-              </Markdown>
+              <Markdown className={stylestr}>{item}</Markdown>
             </div>
           );
         })}
@@ -229,7 +244,7 @@ const ControlPanel = (props) => {
       <h1 className="text-white  font-medium text-md self-center">
         Prototype Two: Writing
       </h1>
-      <div className="flex flex-row w-[30%] justify-evenly">
+      <div className="flex flex-row w-[45%] justify-evenly">
         <div className="bg-white w-[40%] rounded-md px-2">
           <Slider
             min={4}
@@ -252,6 +267,14 @@ const ControlPanel = (props) => {
         >
           {PC.fontFam.replace("-", " ")}
         </button>
+        {PC.version == "2.1" ? (
+          <button
+            className="bg-white text-black text-sm p-1 rounded-md hover:bg-slate-400"
+            onClick={PC.ToggleBold}
+          >
+            {PC.bold ? "bold hover" : "no bold"}
+          </button>
+        ) : null}
 
         <button
           className="bg-white text-black text-sm p-1 rounded-md hover:bg-slate-400"
