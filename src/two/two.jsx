@@ -176,7 +176,10 @@ const ArticleSection = (props) => {
 
   return (
     <div className="flex flex-col bg-slate-50 rounded-md overflow-y-scroll ">
-      <div className="flex flex-col overflow-y-scroll rounded-md w-[70vw]">
+      <div
+        className="flex flex-col overflow-y-scroll rounded-md w-[70vw]"
+        ref={PC.sectionRef}
+      >
         {props.content?.map((item, idx) => {
           return (
             <div

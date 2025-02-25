@@ -1,4 +1,4 @@
-import { createContext, useEffect, useState } from "react";
+import { createContext, useEffect, useState, useRef } from "react";
 import ArticleData from "../assets/ArticleData";
 
 const PrototypeContext = createContext();
@@ -10,6 +10,7 @@ export const PrototypeProvider = (props) => {
   const [version, setVersion] = useState(2.0);
   const [horizontalMargins, setHorizontalMargins] = useState(4);
   const [bold, setBold] = useState(true);
+  const sectionRef = useRef(null);
 
   const [writing, setWriting] = useState(
     localStorage.getItem("PROSE-WRITING-HISTORY") ?? "Write and Reflect here"
@@ -25,6 +26,7 @@ export const PrototypeProvider = (props) => {
     } else {
       setSection(section + 1);
     }
+    sectionRef.current.scrollTo(0, 0);
   }
 
   function PreviousSection() {
@@ -33,6 +35,7 @@ export const PrototypeProvider = (props) => {
     } else {
       setSection(section - 1);
     }
+    sectionRef.current.scrollTo(0, 0);
   }
 
   function SwitchFont() {
@@ -90,6 +93,7 @@ export const PrototypeProvider = (props) => {
         horizontalMargins,
         writing,
         bold,
+        sectionRef,
 
         showAbstract,
         section,
