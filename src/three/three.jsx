@@ -56,7 +56,7 @@ const WritingArea = (props) => {
   return (
     <textarea
       spellCheck="true"
-      className="write mx-4 my-1 rounded-md p-2 text-sm w-[30%] bg-slate-100"
+      className="write mr-4 my-1 rounded-md p-2 text-sm w-[26%] bg-slate-100"
       value={PC.writing ?? ""}
       rows={PC.writing ? PC.writing.split("\n").length + 1 : 0}
       placeholder="Write and reflect here..."
