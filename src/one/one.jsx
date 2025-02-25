@@ -232,7 +232,7 @@ const ControlPanel = (props) => {
       <h1 className="text-white  font-medium text-md self-center">
         Prototype One: Metainteractions & Metacues
       </h1>
-      <div className="flex flex-row w-[30%] justify-evenly">
+      <div className="flex flex-row w-[30%] space-x-5 justify-end">
         {PC.version === 1.1 ? (
           <div className="bg-white w-[40%] rounded-md px-2">
             <Slider

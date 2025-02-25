@@ -265,7 +265,7 @@ const ControlPanel = (props) => {
       <h1 className="text-white  font-medium text-md self-center">
         Prototype Three: Live Software Embedding
       </h1>
-      <div className="flex flex-row w-[35%] justify-evenly">
+      <div className="flex flex-row w-[35%] space-x-5 justify-end">
         <div className="bg-white w-[20%] rounded-md px-2">
           <Slider
             min={4}

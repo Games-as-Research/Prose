@@ -247,7 +247,7 @@ const ControlPanel = (props) => {
       <h1 className="text-white  font-medium text-md self-center">
         Prototype Two: Writing
       </h1>
-      <div className="flex flex-row w-[45%] justify-evenly">
+      <div className="flex flex-row w-[45%] space-x-5 justify-end">
         <div className="bg-white w-[40%] rounded-md px-2">
           <Slider
             min={4}
