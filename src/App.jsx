@@ -47,7 +47,7 @@ const App = () => {
         <h1 className="text-4xl font-medium text-center text-white italic">
           Prose
         </h1>
-        <div className="self-stretch mt-10 max-md:max-w-full">
+        <div className="self-stretch mt-10 mb-20 max-md:max-w-full">
           <div className="flex gap-5 max-md:flex-col">
             {data.map((prototype, index) => (
               <Card
