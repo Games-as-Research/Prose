@@ -59,7 +59,7 @@ export const PrototypeProvider = (props) => {
 
   function AddSectionMarkToNotes(para) {
     if (para) {
-      if (section === ArticleData.sections.length) {
+      if (section === ArticleData.sections.length + 1) {
         // Referencing Bibliography
         setWriting(writing + "\n\n[" + para.toString() + "]:");
       } else {
