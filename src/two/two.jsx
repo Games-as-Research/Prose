@@ -3,6 +3,11 @@ import { ScreenContainer } from "../common";
 import PrototypeContext, { PrototypeProvider } from "./prototypeContext";
 import { useContext, useEffect, useState } from "react";
 import { Slider } from "antd";
+import {
+  ArrowDownCircleIcon,
+  PaperAirplaneIcon,
+} from "@heroicons/react/16/solid";
+import remarkGfm from "remark-gfm";
 
 const Two = (props) => {
   return (
@@ -44,8 +49,69 @@ const Article = (props) => {
             />
           </div>
         )}
-        <WritingArea />
+        {PC.version === 2.2 ? <ChatHistory /> : <WritingArea />}
       </div>
+      {PC.version === 2.2 ? <ChatBar /> : null}
+    </div>
+  );
+};
+
+const ChatHistory = (props) => {
+  const PC = useContext(PrototypeContext);
+  return (
+    <div className="flex flex-col mx-4 my-1 rounded-md p-2 text-sm w-screen bg-slate-200 overflow-y-scroll overflow-x-scroll">
+      <div className="h-5 flex flex-col">
+        <ArrowDownCircleIcon
+          color="#000"
+          className="rounded-sm hover:bg-slate-50 hover:cursor-pointer absolute size-5 shadow-lg"
+          onClick={PC.DownloadChat}
+        />
+        <p className="self-center font-bold">Notes</p>
+      </div>
+      {PC.chatHistory != []
+        ? PC.chatHistory.map((itm, idx) => {
+            return <ChatBubble key={idx} item={itm} />;
+          })
+        : null}
+    </div>
+  );
+};
+
+const ChatBubble = (props) => {
+  return (
+    <div className="w-full p-2 mt-2 text-md self-end rounded-t-md rounded-bl-md bg-slate-50 ">
+      <Markdown className={"markdown"} remarkPlugins={[remarkGfm]}>
+        {props.item}
+      </Markdown>
+    </div>
+  );
+};
+
+const ChatBar = (props) => {
+  const PC = useContext(PrototypeContext);
+
+  return (
+    <div className="flex flex-row items-center justify-items-center my-4 w-[100%] self-center px-10 ">
+      <textarea
+        className="multiple h-10 w-full mr-2 p-2 bg-slate-200 rounded-lg"
+        value={PC.chatMessage}
+        onChange={(e) => PC.setChatMessage(e.target.value)}
+        onSubmit={PC.AddToChatHistory}
+        placeholder="Write and reflect here..."
+        onDoubleClick={() => {
+          navigator.clipboard.readText().then((resp) => {
+            PC.setChatMessage(
+              PC.chatMessage + "*" + resp.toString().trim() + "*\n"
+            );
+          });
+        }}
+      />
+
+      <PaperAirplaneIcon
+        onClick={PC.AddToChatHistory}
+        color="#000"
+        className="rounded-lg w-7 h-7 hover:bg-slate-200"
+      />
     </div>
   );
 };
@@ -156,23 +222,14 @@ const ArticleSectionHeader = (props) => {
 
 const ArticleSection = (props) => {
   const PC = useContext(PrototypeContext);
-  const [stylestr, setStylestr] = useState(
-    "text-justify text-wrap text-sm rounded-lg  hover:-translate-y-1 hover:text-sm hover:bg-slate-200 hover:shadow-md transition delay-50 duration-300 ease-in-out hover:font-semibold"
-  );
+
   let para_count = 0;
 
-  useEffect(() => {
-    console.log("Two::Debug");
-    if (PC.bold === true) {
-      setStylestr(
-        "text-justify text-wrap text-sm rounded-lg  hover:-translate-y-1 hover:text-sm hover:bg-slate-200 hover:shadow-md transition delay-50 duration-300 ease-in-out hover:font-semibold"
-      );
-    } else {
-      setStylestr(
-        "text-justify text-wrap text-sm rounded-lg  hover:-translate-y-1 hover:text-sm hover:bg-slate-200 hover:shadow-md transition delay-50 duration-300 ease-in-out"
-      );
-    }
-  }, [PC.bold]);
+  const base_style = "text-wrap text-md rounded-lg  my-2 mx-5 ";
+  const hover_style =
+    " hover:-translate-y-1 hover:bg-slate-200 hover:shadow-md transition delay-50 duration-300 ease-in-out ";
+  const bold_style =
+    " hover:font-semibold transition delay-50 duration-300 ease-in-out ";
 
   return (
     <div className="flex flex-col bg-slate-50 rounded-md overflow-y-scroll ">
@@ -190,7 +247,15 @@ const ArticleSection = (props) => {
                 paddingLeft: PC.horizontalMargins,
               }}
               onDoubleClick={() => {
-                PC.AddSectionMarkToNotes(idx + 1);
+                if (PC.version !== 2.2) {
+                  PC.AddSectionMarkToNotes(idx + 1);
+                } else if (PC.version === 2.2) {
+                  PC.AddSectionMarkToChatMessage(idx + 1);
+                }
+              }}
+              onMouseUp={() => {
+                const selection = window.getSelection().toString();
+                navigator.clipboard.writeText(selection);
               }}
             >
               {item?.slice(0, 2) !== "##" ? (
@@ -198,7 +263,15 @@ const ArticleSection = (props) => {
                   {++para_count}
                 </p>
               ) : null}
-              <Markdown className={stylestr}>{item}</Markdown>
+              <Markdown
+                className={
+                  base_style +
+                  (PC.hover ? hover_style : "") +
+                  (PC.bold ? bold_style : "")
+                }
+              >
+                {item}
+              </Markdown>
             </div>
           );
         })}
@@ -209,6 +282,11 @@ const ArticleSection = (props) => {
 
 const TheBibliography = (props) => {
   const PC = useContext(PrototypeContext);
+  const base_style = "text-wrap text-md rounded-lg  my-2 mx-5 ";
+  const hover_style =
+    " hover:-translate-y-1 hover:bg-slate-200 hover:shadow-md transition delay-50 duration-300 ease-in-out ";
+  const bold_style =
+    " hover:font-semibold transition delay-50 duration-300 ease-in-out ";
 
   return (
     <div className="flex flex-col bg-slate-50 rounded-md overflow-y-scroll">
@@ -223,13 +301,27 @@ const TheBibliography = (props) => {
                 paddingLeft: PC.horizontalMargins,
               }}
               onDoubleClick={() => {
-                PC.AddSectionMarkToNotes(item.id);
+                if (PC.version !== 2.2) {
+                  PC.AddSectionMarkToNotes(item.id);
+                } else if (PC.version == 2.2) {
+                  PC.AddSectionMarkToChatMessage(item.id);
+                }
+              }}
+              onMouseUp={() => {
+                const selection = window.getSelection().toString();
+                navigator.clipboard.writeText(selection);
               }}
             >
               <p className="self-center text-xs font-light text-slate-400 font-sans ml-8 mr-4">
                 {"[" + item.id + "] "}
               </p>
-              <Markdown className="text-wrap text-sm rounded-lg hover:font-semibold hover:-translate-y-1 hover:text-sm hover:bg-slate-200 hover:shadow-md hover:p-1 transition delay-50 duration-300 ease-in-out">
+              <Markdown
+                className={
+                  base_style +
+                  (PC.hover ? hover_style : "") +
+                  (PC.bold ? bold_style : "")
+                }
+              >
                 {item.title}
               </Markdown>
             </div>
@@ -247,7 +339,7 @@ const ControlPanel = (props) => {
       <h1 className="text-white  font-medium text-md self-center">
         Prototype Two: Writing
       </h1>
-      <div className="flex flex-row w-[45%] space-x-5 justify-end">
+      <div className="flex flex-row w-[70%] space-x-5 justify-end">
         <div className="bg-white w-[40%] rounded-md px-2">
           <Slider
             min={4}
@@ -270,12 +362,21 @@ const ControlPanel = (props) => {
         >
           {PC.fontFam.replace("-", " ")}
         </button>
-        {PC.version == "2.1" ? (
+        {PC.version >= "2.1" ? (
           <button
             className="bg-white text-black text-sm p-1 rounded-md hover:bg-slate-400"
             onClick={PC.ToggleBold}
           >
-            {PC.bold ? "bold hover" : "no bold"}
+            {PC.bold ? "bold on hover" : "no bold"}
+          </button>
+        ) : null}
+
+        {PC.version >= "2.1" ? (
+          <button
+            className="bg-white text-black text-sm p-1 rounded-md hover:bg-slate-400"
+            onClick={PC.ToggleHover}
+          >
+            {PC.hover ? "foregrounding" : "no foregrounding"}
           </button>
         ) : null}
 

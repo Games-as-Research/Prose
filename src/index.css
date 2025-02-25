@@ -3,5 +3,13 @@
 @tailwind utilities;
 
 a {
-    color: #778899;
+  color: #778899;
+}
+
+.markdown > * {
+  all: revert;
+  font-size: medium;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin-top: 0;
+  margin-bottom: 0;
 }
