@@ -23,11 +23,18 @@ export const data = [
   {
     id: "item-3",
     name: "Prototype Two",
-    description:
-      `Prototype Two introduces writing alongside the reading, in a way that allows the reader to think along the article. After the ability to read with all metacues and customization, we feel limited without the ability to write. 
+    description: `Prototype Two introduces writing alongside the reading, in a way that allows the reader to think along the article. After the ability to read with all metacues and customization, we feel limited without the ability to write. 
       This prototype explores how we can now write in different ways alongside the article.`,
     actionText: "Try Prototype",
     route: "/two",
+  },
+  {
+    id: "item-3",
+    name: "Prototype Three",
+    description:
+      "Prototype Three introduces embedding software: simulations, live graphs, and in this case: a game build.",
+    actionText: "Try Prototype",
+    route: "/three",
   },
 ];
 
