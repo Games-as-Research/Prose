@@ -227,6 +227,11 @@ const ArticleSection = (props) => {
 
 const TheBibliography = (props) => {
   const PC = useContext(PrototypeContext);
+  const base_style = "text-wrap text-md rounded-lg  my-2 mx-5 ";
+  const hover_style =
+    " hover:-translate-y-1 hover:bg-slate-200 hover:shadow-md transition delay-50 duration-300 ease-in-out ";
+  const bold_style =
+    " hover:font-semibold transition delay-50 duration-300 ease-in-out ";
 
   return (
     <div className="flex flex-col bg-slate-50 rounded-md overflow-y-scroll">
@@ -247,7 +252,11 @@ const TheBibliography = (props) => {
               <p className="self-center text-xs font-light text-slate-400 font-sans ml-8 mr-4">
                 {"[" + item.id + "] "}
               </p>
-              <Markdown className="text-wrap text-sm rounded-lg hover:font-semibold hover:-translate-y-1 hover:text-sm hover:bg-slate-200 hover:shadow-md hover:p-1 transition delay-50 duration-300 ease-in-out">
+              <Markdown
+                className={
+                  base_style + (PC.bold ? bold_style + hover_style : "")
+                }
+              >
                 {item.title}
               </Markdown>
             </div>
