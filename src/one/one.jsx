@@ -147,6 +147,7 @@ const ArticleSection = (props) => {
           return (
             <div
               className={"flex flex-row py-2"}
+              key={idx}
               style={{
                 marginLeft: PC.horizontalMargins,
                 marginRight: PC.horizontalMargins,
@@ -158,7 +159,6 @@ const ArticleSection = (props) => {
                 </p>
               ) : null}
               <Markdown
-                key={idx}
                 className={
                   "text-justify text-wrap text-sm px-2 rounded-lg " +
                   (PC.version === 1.1
