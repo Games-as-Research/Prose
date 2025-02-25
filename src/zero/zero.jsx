@@ -168,6 +168,11 @@ const ArticleSection = (props) => {
 
 const TheBibliography = (props) => {
   const PC = useContext(PrototypeContext);
+  const base_style = "text-wrap text-md rounded-lg  my-2 mx-5 ";
+  const hover_style =
+    " hover:-translate-y-1 hover:bg-slate-200 hover:shadow-md transition delay-50 duration-300 ease-in-out ";
+  const bold_style =
+    " hover:font-semibold transition delay-50 duration-300 ease-in-out ";
   if (PC.version === 0.1) {
     return (
       <div
@@ -177,6 +182,9 @@ const TheBibliography = (props) => {
           marginRight: PC.horizontalMargins,
         }}
       >
+        <div className="flex flex-row justify-center my-5 mx-4">
+          <h2 className="text-center text-md font-semibold ">Bibliography</h2>
+        </div>
         <div className="flex flex-col  bg-slate-100 rounded-md">
           {PC.ArticleData?.bibliography.map((item, idx) => {
             return (
@@ -184,7 +192,13 @@ const TheBibliography = (props) => {
                 <p className="self-center text-xs font-light text-slate-400 font-sans ml-8 mr-4">
                   {"[" + item.id + "] "}
                 </p>
-                <Markdown className="text-wrap text-sm rounded-lg hover:font-semibold hover:-translate-y-1 hover:text-sm hover:bg-slate-200 hover:shadow-md hover:p-1 transition delay-50 duration-300 ease-in-out">
+                <Markdown
+                  className={
+                    base_style +
+                    (PC.hover ? hover_style : "") +
+                    (PC.bold ? bold_style : "")
+                  }
+                >
                   {item.title}
                 </Markdown>
               </div>
