@@ -1,7 +1,50 @@
 
+# February 25th 2025 
+
+
+## 10:50 AM 
+[Prototype Zero: Feedback](https://github.com/estineali/digital-first/commit/5e0cd6c1aa74b91219804fea015c5d253a339b38)
+Feedback from other prototypes, I wanted to explore how this version could grow. Like I said last night, there *is* a charm to the simple long-scroll but its not as feature rich as the others. So what if we enhance this too?
+I have added the margins, hover, bold, font family, and paragraph numbers. How does this change my reading in this version?
+## 9:41 AM -- Needed some sleep 
+I think I am done coding. I will never truly be done, but I think I have what I need to write the conclusions and end this. I should do a final pass of reading all the way through.
+
+It is interesting how the concept of affordances applies to digital tech because 
+
+The things that are here (in the prototype) and the things that are not here are all supposed to make a point. 
+## 2:30 AM: End of the Line
+I ended up implementing the fourth prototype as well but I have this nagging feeling that Im not done building them. I do feel like I should develop the fourth one some more I am also getting ideas of how to use the observations from the later prototypes back to the first one. There *is* a charm to that version with its continuity
+
+If there was one thing I would want to add, its that ability to narrow out the margins. And of course the hover and bold as well. But then.... I suppose what I this tells me is that this ability to reconfigure things really is valuable.
+
+## 12:15 AM 
+[Prototype Three: Embedding a Game build](https://github.com/estineali/digital-first/commit/408b51699e85750cc3a5cdfa60bac8c263269972)
+
+Seems simple enough. Helped me think about my play experience aÏs I played. I think what would really improve this is the spatial navigation. I should be able to move alongside it.
+But the point really isn't embedding one, the idea is multiple of these, at multiple stages and how they look in comparison
+
+[Two: Reset Scroll](https://github.com/estineali/digital-first/commit/409ff950ec7a07e0eb110fd60fbc29a06fc362fd)
+A bit of a weird interaction to not have the scroll to top be automatic... This kinda detail is important in the kind of argument I am making. Maybe next step should be that the article scrolls back to the last position?
+
+
+
 # February 24th 2025 
 
-//Import the notes from github commits. 
+## 11:13 PM
+[Two: control over font bolding](https://github.com/estineali/digital-first/commit/b74391033594ff7782ecb971afc233cd7f5aecf1) 
+Richy said he liked the grey background but not the bold. Want to see how the audience feels with this control...")
+## 10:44 PM
+[Prototype One: removing blunt hover](https://github.com/estineali/digital-first/commit/15107c5cc5e38bc26f2f5cc1bb55b94dba9b79fd)
+
+When first introduced the blunt hover is too much of a whiplash and it hurts the contrast I'm trying to draw. This way the transition from Prototype Zero and One is more pronounced, it highlights the restructure and the paragraph numbers.
+But for paragraph numbers to hit, we still need to go back on to the second prototype. The biggest difference is felt when you have a) Hover, b) Paragraph numbers, c) writing alongside reading d) double click to reference.
+Its the economy it establishes on top of the paper that is just... its like from walking to getting on a horse, I dont need to force myself to connect with my leg muscles and run faster, I need to control my horse to go faster, i need to floor the gas to go hard and go in.")
+
+## 10:30 PM 
+There is a deliberate arms length that I have kept from hypertext and hyperlinking. For one, it has historically gotten a lot of attention but also two: hyperlink affords breadth-first search. There is some of that that happens but it is 
+
+Future of Academic publication:
+Once we start process
 
 ## 5:00 PM 
 After having developed prototype two, I am trying to use this to try and read the article. Oh my god... not to honk my own horn but FUCK This feels good. The last two months holding this form in my head and reading in PDFs has been a nightmare 
@@ -18,7 +61,7 @@ The goal is to illuminate the design space. What interactions change my reading 
 When I translate from PDF to Web app, I make the paper fluid, the paper takes the form of the window (and at window_count = 1,  screen). Now I can open the article in whatever way I want  -- see [here](https://www.youtube.com/watch?v=LGAxxIqMZGg) 
 
 When I spread the article out, introduce foregrounding, conditional rendering, and generally some meta-interactions, I change the way someone interacts with an article. This allows me to pay attention on the sections I want to pay attention to. 
-The only thing that I think is missing is spatial navigation and hovering. This one is extremely important. I dont know if I should implement spartial navigation or if I should implement embedding things...  (nvm did it)
+The only thing that I think is missing is spatial navigation and hovering. This one is extremely important. I don't know if I should implement spartial navigation or if I should implement embedding things...  (nvm did it)
 
 To record: 
 1. Prototype Zero: Fluid Article 
@@ -27,11 +70,70 @@ To record:
 	2. Adds visual hierarchy to Bibliography as well 
 3. Prototype Two: Writing 
 
-## 10:30 PM 
-There is a deliberate arms length that I have kept from hypertext and hyperlinking. For one, it has historically gotten a lot of attention but also two: hyperlink affords breadth-first search. There is some of that that happens but it is 
+## 3:56 PM
+[One: Enhanced Bibliography ](https://github.com/estineali/digital-first/commit/56da8c411941fb1303f9ad627377fbb5ce493202) 
+I think its so much better for reading, adding it from Prototype Two to 1.1")
 
-Future of Academic publication:
-Once we start process
+## 12:00 PM
+[Two: Revising Writing area positioning and Bibliography improvement](https://github.com/estineali/digital-first/commit/6cc2788b3c76165e71528d8b62640414ebd86240)
+
+I think this placement works much nicer. The column layout implies distinctness and they positioning and relative colours imply some hierarchy. Both sections (reading and writing) scroll independently of each other.
+I have also revised the bibliography to follow a similar pattern of hierarchy.
+More importantly there is an option to directly add a reference to the paragraph by double clicking on the paragraph, into your notes. The same thing applies for bibliography as well except in bibliography form the reference looks exactly like it does in text.
+
+[Two: Version 1.1 - Paragraph reference improvement](https://github.com/estineali/digital-first/commit/44357cdda102ebd7db5655a0d3eaa315a2cb8f6d)
+I thought the large one was a bit clunky so Im adding it in this form
+
+## 11:05 AM 
+
+[Prototype Two: Introduced a persistent writing area](https://github.com/estineali/digital-first/commit/f51f2d146805aa3c2a1174904d15329671bf4f6e) 
+
+Now there are more questions: Where should this be placed, should it be vertical or horizontal, how do we go about this... I could also give it its own section and then use two windows, The possibilities are endless in configuration. What do each of these configuration imply to the reader?
+I definitely need the writing window alongside my
+
+## 4:38 AM 
+[One: Variable Margins](https://github.com/estineali/digital-first/commit/0377be0813b70addcdc9fbbb38c1b49178ca27ed )
+
+Another meta-interaction that allows the reader to change the article's structure. I often find it hard to read it when the text is too spread out. I realized this with obsidian when I saw them give me a lot of dead space on the side. That changed the game for me. Do people prefer narrower reading spaces or wider?
+## 4:05 AM 
+[One: Introducing version 1.1](https://github.com/estineali/digital-first/commit/60246a300efdcab5e308b1debc981ab8135d71ef)
+
+This one is in contrast to version 1.0 where the interactions are abrupt but in version 1.1 Im starting to introduce some smoothness. The paragraphs gently move up, transition into view instead of the blunt enlargening.
+These two variants juxtaposed assist my imagination as I speculate on where else these smooth transitions can make a difference. More importantly, it helps me reflect on how how I am percieving these differences.
+Next I want a smoother horizontal transition, and the ability to smoothly change vertical margins.")
+## 3:32 AM 
+[Prototype One: paragraph markers](https://github.com/estineali/digital-first/commit/840850b379a120792a4c8edd7e0624cf74a26e0c)
+
+Introducing paragraph markers. Now not only is a section referable but also a paragraph . When I go forward into writing, each paragraph number will be referable. These also give me an initial structure of the essay
+I want them to be visually small because they are not important to view at all times, nor should they demand too much attention.
+Should they be bold, or thin? Worth exploring... Thin dissolves too much, medium might be too bold. I have a history of preferring bold text, so I think I will go with either thin or light as font weight.
+Im also wondering if the font colour should be a lighter grey. Because keeping in mind, this is meant to orient the reader, it shouldn't takeÏ too much attention...")
+## 3:03 AM
+[Prototype One - in progress](https://github.com/estineali/digital-first/commit/b74432775b7bdf50280cd3333f5e8456089f7abe)
+
+Vertical scrolling - continuity
+Horizontal switch - change section
+
+On hover, a paragraph is foregrounded with the text being bold and the background growing darker. This is a point where I have lots of decisions. Do we do only the background darkening? And if so, how dark? Do we do only the font bold? If so, how bold? If the font is too bold, it occupies too much space and becomes
+
+It is very important for the visual hierarchy to remain intact. In this case you will see that the paper's title stays visible at all times, as does the section's title. There is some dead space that shows demarcates between the elements.
+For this, the whole screen must **NOT** be scrollable. Instead, only the material should be scrollable.
+
+Another decision Im curious about is whether it makes sense to keep the arrow buttons on the top, near the header or at the middle of the verticle-center of the page?
+
+These micro design decisions are going to change the entire experience.
+
+Another question is, does it suffice to have the switch between sections one by one, or do we need the jump-to-section thingy too? How important is that to the reading process? How does that change reading?
+
+Overall, all of these are useful controls. More control is good for the reader.
+
+
+## 1:37 AM 
+[Prototype Zero Complete](https://github.com/estineali/digital-first/commit/9044a864a499f561ed37affc97ea6dcb9646239a)
+Prototype Zero is meant to be a direct translation of the article from a PDF reader into a web app. This is meant to demonstrate the article as fluid. Now that the web app affords fluidity and the article takes the shape of its container we can start visualizing what more can be done to this.
+Only thing missing now are images")
+
+Prototype Zero is meant to be a direct translation of the article from a PDF reader into a web app. This is meant to demonstrate the article as fluid. Now that the web app affords fluidity and the article takes the shape of its container we can start visualizing what more can be done to this. Only thing missing now are images
 
 # February 18th 2025 
 
