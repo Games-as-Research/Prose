@@ -8,7 +8,6 @@ a {
 
 .markdown > * {
   all: revert;
-  font-size: medium;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   margin-top: 0;
   margin-bottom: 0;
