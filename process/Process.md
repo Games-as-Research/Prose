@@ -2,6 +2,24 @@
 # February 25th 2025 
 
 
+## 2:31 PM
+[Prototype Two: version 2.2 -- Chat Notes](https://github.com/estineali/digital-first/commit/b70e32edbae7caffc60f96d788ffc58a1a0b11a7)
+
+Introduces a chat like interface with notes on the side. Also introduces a few meta interactions: Highlight to auto-copy, double click in the chat window to paste. All markdown formatting works in the notes on the side and on top of that, you can download your notes in markdown format. Centralizes the focus on the writing and what one derives from the reading, rather than the article itself.
+
+## 12:30PM 
+**Reflecting on the form of the Paper in Zotero**
+There is a paper in this app, that allows me to highlight what I find important. The paper is at the centre of the interaction not my learning. 
+
+There is no meaning attached to the paper divide except it gives you a print preview. It was a 
+useful first step to have pages in files because prior to these, we have a page-based understanding. And this still holds true because people who need to read text charge through these distractions and develop their own processes, they have their own methods for reading along these constraints and orienting themselves. 
+
+But there are other digital artifacts with text on them and they make us think of a 
+
+Now that I have the double click to reference a paragraph, I am thinking of discrete "comment" like ways to interact as well... These could be grouped as well. They could be exported. I must develop this... 
+
+#- I am plagued by the visions of a digital-first future of reading and constrained by time and legal requirements. Next time I feel apathy, I should remember this frustration. I need time with my designs, I need space to walk away from these so I can come back... fucking hell
+
 ## 10:50 AM 
 [Prototype Zero: Feedback](https://github.com/estineali/digital-first/commit/5e0cd6c1aa74b91219804fea015c5d253a339b38)
 Feedback from other prototypes, I wanted to explore how this version could grow. Like I said last night, there *is* a charm to the simple long-scroll but its not as feature rich as the others. So what if we enhance this too?
