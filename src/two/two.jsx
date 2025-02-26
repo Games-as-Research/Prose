@@ -305,7 +305,7 @@ const ArticleSection = (props) => {
                 navigator.clipboard.writeText(
                   "`[S" +
                     (PC.section + 1).toString() +
-                    "P" +
+                    ".P" +
                     (idx + 1).toString() +
                     "]`: *" +
                     selection.trim() +
