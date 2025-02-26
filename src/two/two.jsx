@@ -93,6 +93,8 @@ const ChatBar = (props) => {
   return (
     <div className="flex flex-row items-center justify-items-center my-4 w-[100%] self-center px-10 ">
       <textarea
+        autoFocus
+        ref={PC.chatRef}
         className="multiple h-10 w-full mr-2 p-2 bg-slate-200 rounded-lg"
         value={PC.chatMessage}
         onChange={(e) => PC.setChatMessage(e.target.value)}
@@ -123,6 +125,7 @@ const WritingArea = (props) => {
   const PC = useContext(PrototypeContext);
   return (
     <textarea
+      ref={PC.notesRef}
       spellCheck="true"
       className="write mx-4 my-1 rounded-md p-2 text-sm w-screen bg-slate-100"
       value={PC.writing ?? ""}

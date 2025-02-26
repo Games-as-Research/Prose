@@ -13,6 +13,8 @@ export const PrototypeProvider = (props) => {
   const [hover, setHover] = useState(true);
 
   const sectionRef = useRef(null);
+  const chatRef = useRef(null);
+  const notesRef = useRef(null);
 
   const [writing, setWriting] = useState(
     localStorage.getItem("PROSE-WRITING-HISTORY") ?? "Write and Reflect here"
@@ -94,6 +96,7 @@ export const PrototypeProvider = (props) => {
         }
       }
     }
+    notesRef.current?.focus();
   }
 
   function AddSectionMarkToChatMessage(para) {
@@ -106,6 +109,7 @@ export const PrototypeProvider = (props) => {
           chatMessage + " `[S" + (section + 1) + ".P" + para.toString() + "]` "
         );
       }
+      chatRef.current?.focus();
     }
   }
   function ToggleBold() {
@@ -153,6 +157,8 @@ export const PrototypeProvider = (props) => {
         chatMessage,
         section,
         showAbstract,
+        chatRef,
+        notesRef,
 
         setSection,
         setWriting,
