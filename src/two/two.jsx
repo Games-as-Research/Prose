@@ -101,7 +101,10 @@ const ChatBar = (props) => {
         onDoubleClick={() => {
           navigator.clipboard.readText().then((resp) => {
             PC.setChatMessage(
-              PC.chatMessage + "*" + resp.toString().trim() + "*\n"
+              PC.chatMessage +
+                (PC.chatMessage == "" ? "" : "\n") +
+                resp.toString().trim() +
+                "\n"
             );
           });
         }}
@@ -110,7 +113,7 @@ const ChatBar = (props) => {
       <PaperAirplaneIcon
         onClick={PC.AddToChatHistory}
         color="#000"
-        className="rounded-lg w-7 h-7 hover:bg-slate-200"
+        className="rounded-lg w-7 h-7 hover:bg-slate-200 self-center"
       />
     </div>
   );
@@ -286,7 +289,15 @@ const ArticleSection = (props) => {
               }}
               onMouseUp={() => {
                 const selection = window.getSelection().toString();
-                navigator.clipboard.writeText(selection);
+                navigator.clipboard.writeText(
+                  "`[S" +
+                    (PC.section + 1).toString() +
+                    "P" +
+                    (idx + 1).toString() +
+                    "]`: *" +
+                    selection.trim() +
+                    "*"
+                );
               }}
             >
               {item?.slice(0, 2) !== "##" ? (
