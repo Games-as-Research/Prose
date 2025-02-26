@@ -165,24 +165,55 @@ const ArticleAbstract = (props) => {
       <p className="text-center text-sm my-2 text-wrap mx-1">
         {"(" + props.year + ")"}
       </p>
-      <h2
-        className="text-center text-md my-5 mx-4 font-semibold"
-        style={{ color: hold ? "red" : "black" }}
-      >
-        Abstract
-      </h2>
-      <Markdown className={"text-justify text-wrap text-md my-2 mx-5"}>
-        {props.abstract}
-      </Markdown>
-      <div className="flex mx-5">
-        <p className="font-bold mr-1">{"Keywords: "}</p>
-        <p className="text-md">{props.keywords.join("; ")}</p>
-      </div>
-      <div className="flex mx-5 mt-2">
-        <p className="font-bold mr-2">{"Reference: "}</p>
-        <Markdown className={"text-sm text-blue-800"}>
-          {props.citation}
-        </Markdown>
+      <div className="flex flex-row w-full px-4 py-2">
+        <div className="w-[100%] bg-slate-300 rounded-md">
+          <h4
+            className="text-center text-md my-5 mx-4 font-semibold"
+            style={{ color: hold ? "red" : "black" }}
+          >
+            Sections
+          </h4>
+          {[...PC.ArticleData.sections, { title: "Bibliography" }].map(
+            (itm, idx) => {
+              return (
+                <h2
+                  className={
+                    "text-wrap text-md my-2 mx-5 hover:text-red-500 hover:cursor-pointer " +
+                    (idx == PC.section ? "font-semibold" : "")
+                  }
+                  key={idx}
+                  onClick={(e) => {
+                    PC.setSection(idx);
+                    e.stopPropagation();
+                  }}
+                >
+                  {(idx + 1).toString() + ". " + itm.title.trim()}
+                </h2>
+              );
+            }
+          )}
+        </div>
+        <div className="flex flex-col ">
+          <h2
+            className="text-center text-md my-5 mx-4 font-semibold"
+            style={{ color: hold ? "red" : "black" }}
+          >
+            Abstract
+          </h2>
+          <Markdown className={"text-justify text-wrap text-md my-2 mx-5"}>
+            {props.abstract}
+          </Markdown>
+          <div className="flex mx-5">
+            <p className="font-bold mr-1">{"Keywords: "}</p>
+            <p className="text-md">{props.keywords.join("; ")}</p>
+          </div>
+          <div className="flex mx-5 mt-2">
+            <p className="font-bold mr-2">{"Reference: "}</p>
+            <Markdown className={"text-sm text-blue-800"}>
+              {props.citation}
+            </Markdown>
+          </div>
+        </div>
       </div>
     </div>
   );

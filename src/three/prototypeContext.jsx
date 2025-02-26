@@ -85,9 +85,9 @@ export const PrototypeProvider = (props) => {
         writing,
         bold,
         sectionRef,
-
         showAbstract,
         section,
+        setSection,
         setWriting,
         setHorizontalMargins,
         setShowAbstract,

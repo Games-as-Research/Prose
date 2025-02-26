@@ -154,6 +154,7 @@ export const PrototypeProvider = (props) => {
         section,
         showAbstract,
 
+        setSection,
         setWriting,
         setHorizontalMargins,
         setShowAbstract,

@@ -54,6 +54,7 @@ export const PrototypeProvider = (props) => {
 
         showAbstract,
         section,
+        setSection,
         setHorizontalMargins,
         setShowAbstract,
         NextSection,
