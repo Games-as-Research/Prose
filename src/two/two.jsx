@@ -243,7 +243,20 @@ const ArticleSectionHeader = (props) => {
       >
         {"<"}
       </button>
-      <h2 className="text-center text-md font-semibold self-center">{title}</h2>
+      <h2
+        className="text-center text-md font-semibold self-center"
+        onDoubleClick={() => {
+          if (PC.version === 2.2) {
+            const _header =
+              (PC.chatMessage === "" ? "# " : "\n# ") +
+              PC.ArticleData.sections[PC.section].title +
+              "\n\n";
+            PC.setChatMessage(PC.chatMessage + _header);
+          }
+        }}
+      >
+        {title}
+      </h2>
       <button
         className="font-mono font-black bg-slate-200 p-0.5 size-10 rounded-md hover:bg-slate-400"
         onClick={PC.NextSection}
