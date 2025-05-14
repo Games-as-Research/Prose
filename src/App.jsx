@@ -45,7 +45,7 @@ const App = () => {
     <div className="flex overflow-hidden flex-col items-center min-h-screen px-20 pt-12 pb-4 bg-black max-md:px-5">
       <div className="flex flex-col items-center w-full max-w-full max-md:max-w-full">
         <h1 className="text-4xl font-medium text-center text-white italic">
-          Prose
+          Affordances of Interactive Reading
         </h1>
         <div className="self-stretch mt-10 mb-20 max-md:max-w-full">
           <div className="flex gap-5 max-md:flex-col">
@@ -59,9 +59,6 @@ const App = () => {
               />
             ))}
           </div>
-        </div>
-        <div className="mt-7 text-xs font-light text-center text-white max-md:max-w-full">
-          Copyrights © Muhammad Shahrom Ali 2025. All Rights Reserved
         </div>
       </div>
     </div>

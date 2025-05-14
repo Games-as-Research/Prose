@@ -543,14 +543,15 @@ Who am I writing this thesis for?
 
 
 # December 29th 2024 
-My research is about the academic paper, how it is presented and the lack of interactivity with the paper and the data the paper is built on. The Contentions with digital reading are those of interruption and 
+My research is about the academic paper, how it is presented and the lack of interactivity with the paper and the data the paper is built on. The Contentions with digital reading are those of interruption and disorientation. 
+
 I have an introduction written for my thesis proposal which is talking about the problem with the digital form of the academic papers very succinctly. 
 
 I think first I need to build my argument, find the sources Im going to lean on, and then I should think about morphing it to the audience's needs. 
 
-As I read the Zimmerman 2010 paper, they also talked about justifying why I need a research creation approach to creation as Richy did. He was right. I should justify why I need a RtD approach to working. 
- 
-It is *supported* by digital reading in general but it has to be specifically about the digital reading of academic papers, especially in the context of game design. This is also 
+As I read the Zimmerman 2010 paper, they also talked about justifying why I need a research creation approach to creation as Richy did. 
+
+It is *supported* by digital reading in general but it has to be specifically about the digital reading of academic papers, especially in the context of game design. 
 
 ---
 I have been absorbing the material too much, I want to write more. I havent written in quite some time. 
@@ -568,10 +569,6 @@ I have found another instance where an alternative of the Watts-Strogatz paper w
 
 I got this from the Atlantic article I was reading and while that article has no references (hah, I see the value of them now lol) it does present very similar articles. if I could possibly dig deeper into this, I have an argument in the literature. 
 
-In a literature review, I need not summarize an article but I need to analyze it. That is the purpose. If I can analyze the atlantic article, the two versions presented and put them all in conversation with my affordance lens, I think I have something solid. 
-
-Im feeling more confident that this is a kind of lit review I can do and nail; else I was feeling very lost as to what to write and that I have forgotten how to write. 
-
 I still dont know what exactly this domain is that I am operating in. If I dig into the roots of the watts-strogatz paper I might be able to find more about the academic discipline. 
 
 I do really like the material of the atlantic article but it doesnt have any sources - should I email the author? 
@@ -581,15 +578,11 @@ In any case, I am dead sleepy now, I need to sleep... Will return tomorrow and s
 # December 10th 2024
 
 ## Midnight 
-I have primed my reading faculties by reading through eric hayot's book and I think im warmed up. I am able to focus and read at variable speeds. 
-
 I read through the introduction of `Literatures in the Digital Era: Theory and Praxis` by Amelia Sanz and Dolores Romero and this has been a phenomenal starting point because they talk about a lot of the issues that I am targeting with my creation. My notes 
 
 What Im gathering from this is that this is what I will use as the grounds to speculate on the affordances in the digital-first academic paper. There is plenty of literature on hypertext, in the domain of digital humanities: digital/electronic publications. This book also touched on **the difficulty of integrating interactivity with narrativity**. 
 
 The problem/lacking with this book is what is lacking with all resources on the topic i.e. all of these resources are about digital publication in general, and mine is about academic reading, academic articles, research papers. Their Digital form. How much of their arguments still apply to mine? 
-
-As for the proposal, God this is so disruptive to my work, I need to scope the problem, present an understanding of the domain in which my research lies. For the lit review of the proposal, I should describe the problem with digital reading and attempts at solving such a problem. 
 
 
 --- 
